@@ -12,13 +12,13 @@ import net.minecraft.item.Item;
 import net.minecraft.entity.player.PlayerEntity;
 
 import net.mcreator.entitiesoftheunknown.world.dimension.ShrineDimensionDimension;
-import net.mcreator.entitiesoftheunknown.itemgroup.AncientItemsItemGroup;
+import net.mcreator.entitiesoftheunknown.itemgroup.ShrineDimensionBlocksItemGroup;
 
 public class ShrineDimensionItem extends Item {
 	@ObjectHolder("entities_of_the_unknown:shrine_dimension")
 	public static final Item block = null;
 	public ShrineDimensionItem() {
-		super(new Item.Properties().group(AncientItemsItemGroup.tab).maxDamage(64));
+		super(new Item.Properties().group(ShrineDimensionBlocksItemGroup.tab).maxDamage(64));
 	}
 
 	@Override

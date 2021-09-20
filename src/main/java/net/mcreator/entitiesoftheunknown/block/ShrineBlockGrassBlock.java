@@ -21,7 +21,7 @@ import net.minecraft.block.HorizontalBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
-import net.mcreator.entitiesoftheunknown.itemgroup.AncientItemsItemGroup;
+import net.mcreator.entitiesoftheunknown.itemgroup.ShrineDimensionBlocksItemGroup;
 import net.mcreator.entitiesoftheunknown.EntitiesOfTheUnknownModElements;
 
 import java.util.List;
@@ -38,8 +38,8 @@ public class ShrineBlockGrassBlock extends EntitiesOfTheUnknownModElements.ModEl
 	@Override
 	public void initElements() {
 		elements.blocks.add(() -> new CustomBlock());
-		elements.items
-				.add(() -> new BlockItem(block, new Item.Properties().group(AncientItemsItemGroup.tab)).setRegistryName(block.getRegistryName()));
+		elements.items.add(
+				() -> new BlockItem(block, new Item.Properties().group(ShrineDimensionBlocksItemGroup.tab)).setRegistryName(block.getRegistryName()));
 	}
 	public static class CustomBlock extends Block {
 		public static final DirectionProperty FACING = HorizontalBlock.HORIZONTAL_FACING;

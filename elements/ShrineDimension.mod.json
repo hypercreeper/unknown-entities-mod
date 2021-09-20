@@ -37,7 +37,7 @@
     },
     "igniterName": "Soul Powder and Steel",
     "igniterTab": {
-      "value": "CUSTOM:AncientItems"
+      "value": "CUSTOM:ShrineDimensionBlocks"
     },
     "texture": "flintandsoulpowder",
     "portalTexture": "shrinedimension",

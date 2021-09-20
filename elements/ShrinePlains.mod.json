@@ -9,10 +9,6 @@
     "undergroundBlock": {
       "value": "CUSTOM:ShrineBlock"
     },
-    "waterColor": {
-      "value": -10092391,
-      "falpha": 0.0
-    },
     "ambientSound": {
       "value": ""
     },
@@ -47,12 +43,12 @@
     "seagrassPerChunk": 0,
     "flowersPerChunk": 4,
     "mushroomsPerChunk": 3,
-    "bigMushroomsChunk": 1,
-    "sandPatchesPerChunk": 1,
+    "bigMushroomsChunk": 5,
+    "sandPatchesPerChunk": 2,
     "gravelPatchesPerChunk": 0,
     "reedsPerChunk": 0,
     "cactiPerChunk": 0,
-    "treesPerChunk": 2,
+    "treesPerChunk": 9,
     "vanillaTreeType": "Big trees",
     "treeType": 1,
     "minHeight": 7,
@@ -70,11 +66,11 @@
       "value": "Blocks.WARPED_FUNGUS"
     },
     "spawnStronghold": true,
-    "spawnMineshaft": false,
+    "spawnMineshaft": true,
     "spawnPillagerOutpost": true,
     "villageType": "savanna",
     "spawnWoodlandMansion": false,
-    "spawnJungleTemple": false,
+    "spawnJungleTemple": true,
     "spawnDesertPyramid": true,
     "spawnIgloo": false,
     "spawnOceanMonument": false,
@@ -83,7 +79,10 @@
     "defaultFeatures": [
       "Caves",
       "Ores",
-      "FrozenTopLayer"
+      "FrozenTopLayer",
+      "Fossils",
+      "ExtraEmeraldOre",
+      "DeadBushes"
     ],
     "spawnEntries": []
   }

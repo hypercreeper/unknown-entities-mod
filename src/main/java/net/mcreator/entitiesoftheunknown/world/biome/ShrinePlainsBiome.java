@@ -61,14 +61,16 @@ public class ShrinePlainsBiome extends EntitiesOfTheUnknownModElements.ModElemen
 		@SubscribeEvent
 		public void registerBiomes(RegistryEvent.Register<Biome> event) {
 			if (biome == null) {
-				BiomeAmbience effects = new BiomeAmbience.Builder().setFogColor(12638463).setWaterColor(-10092391).setWaterFogColor(329011)
+				BiomeAmbience effects = new BiomeAmbience.Builder().setFogColor(12638463).setWaterColor(4159204).setWaterFogColor(329011)
 						.withSkyColor(7972607).withFoliageColor(10387789).withGrassColor(9470285).build();
 				BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder().withSurfaceBuilder(
 						SurfaceBuilder.DEFAULT.func_242929_a(new SurfaceBuilderConfig(ShrineBlockGrassBlock.block.getDefaultState(),
 								ShrineBlockBlock.block.getDefaultState(), ShrineBlockBlock.block.getDefaultState())));
 				biomeGenerationSettings.withStructure(StructureFeatures.STRONGHOLD);
+				biomeGenerationSettings.withStructure(StructureFeatures.MINESHAFT);
 				biomeGenerationSettings.withStructure(StructureFeatures.PILLAGER_OUTPOST);
 				biomeGenerationSettings.withStructure(StructureFeatures.VILLAGE_SAVANNA);
+				biomeGenerationSettings.withStructure(StructureFeatures.JUNGLE_PYRAMID);
 				biomeGenerationSettings.withStructure(StructureFeatures.DESERT_PYRAMID);
 				biomeGenerationSettings.withStructure(StructureFeatures.SHIPWRECK);
 				biomeGenerationSettings.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Feature.TREE
@@ -78,7 +80,7 @@ public class ShrinePlainsBiome extends EntitiesOfTheUnknownModElements.ModElemen
 								new MegaJungleTrunkPlacer(7, 2, 19), new TwoLayerFeature(1, 1, 2)))
 										.setDecorators(ImmutableList.of(new CustomCocoaTreeDecorator())).setMaxWaterDepth(0).build())
 						.withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT)
-						.withPlacement(Placement.COUNT_EXTRA.configure(new AtSurfaceWithExtraConfig(2, 0.1F, 1))));
+						.withPlacement(Placement.COUNT_EXTRA.configure(new AtSurfaceWithExtraConfig(9, 0.1F, 1))));
 				biomeGenerationSettings.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION,
 						Feature.FLOWER.withConfiguration(Features.Configs.NORMAL_FLOWER_CONFIG)
 								.withPlacement(Features.Placements.VEGETATION_PLACEMENT).withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT)
@@ -97,13 +99,13 @@ public class ShrinePlainsBiome extends EntitiesOfTheUnknownModElements.ModElemen
 										.with(HugeMushroomBlock.DOWN, Boolean.FALSE)),
 								new SimpleBlockStateProvider(Blocks.MUSHROOM_STEM.getDefaultState().with(HugeMushroomBlock.UP, Boolean.FALSE)
 										.with(HugeMushroomBlock.DOWN, Boolean.FALSE)),
-								1)));
+								5)));
 				biomeGenerationSettings.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION,
 						Feature.HUGE_RED_MUSHROOM.withConfiguration(new BigMushroomFeatureConfig(
 								new SimpleBlockStateProvider(Blocks.RED_MUSHROOM_BLOCK.getDefaultState().with(HugeMushroomBlock.DOWN, Boolean.FALSE)),
 								new SimpleBlockStateProvider(Blocks.MUSHROOM_STEM.getDefaultState().with(HugeMushroomBlock.UP, Boolean.FALSE)
 										.with(HugeMushroomBlock.DOWN, Boolean.FALSE)),
-								1)));
+								5)));
 				biomeGenerationSettings
 						.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION,
 								Feature.DISK
@@ -111,10 +113,13 @@ public class ShrinePlainsBiome extends EntitiesOfTheUnknownModElements.ModElemen
 												new SphereReplaceConfig(Blocks.SAND.getDefaultState(), FeatureSpread.func_242253_a(2, 4), 2,
 														ImmutableList.of(ShrineBlockGrassBlock.block.getDefaultState(),
 																ShrineBlockBlock.block.getDefaultState())))
-										.withPlacement(Features.Placements.SEAGRASS_DISK_PLACEMENT).func_242731_b(1));
+										.withPlacement(Features.Placements.SEAGRASS_DISK_PLACEMENT).func_242731_b(2));
 				DefaultBiomeFeatures.withCavesAndCanyons(biomeGenerationSettings);
 				DefaultBiomeFeatures.withOverworldOres(biomeGenerationSettings);
 				DefaultBiomeFeatures.withFrozenTopLayer(biomeGenerationSettings);
+				DefaultBiomeFeatures.withFossils(biomeGenerationSettings);
+				DefaultBiomeFeatures.withEmeraldOre(biomeGenerationSettings);
+				DefaultBiomeFeatures.withDesertDeadBushes(biomeGenerationSettings);
 				MobSpawnInfo.Builder mobSpawnInfo = new MobSpawnInfo.Builder().isValidSpawnBiomeForPlayer();
 				biome = new Biome.Builder().precipitation(Biome.RainType.RAIN).category(Biome.Category.NONE).depth(0.1f).scale(0.2f).temperature(0.5f)
 						.downfall(0.5f).setEffects(effects).withMobSpawnSettings(mobSpawnInfo.copy())
