@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "entities_of_the_unknown:items/soul_helmet"
+  }
+}

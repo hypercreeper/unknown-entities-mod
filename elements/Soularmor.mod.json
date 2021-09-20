@@ -1,0 +1,62 @@
+{
+  "_fv": 24,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "soul_helmet",
+    "enableBody": true,
+    "textureBody": "soul_chestplate",
+    "enableLeggings": true,
+    "textureLeggings": "soul_leggings",
+    "enableBoots": true,
+    "textureBoots": "soul_boots",
+    "creativeTab": {
+      "value": "CUSTOM:Armorcreativetab"
+    },
+    "armorTextureFile": "soul_armour_yexture",
+    "helmetName": "Soul Helmet",
+    "bodyName": "Soul Chestplate",
+    "leggingsName": "Soulr Leggings",
+    "bootsName": "Soul Boots",
+    "helmetSpecialInfo": [],
+    "bodySpecialInfo": [],
+    "leggingsSpecialInfo": [],
+    "bootsSpecialInfo": [],
+    "helmetModelName": "Default",
+    "helmetModelPart": "Helmet",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "Default",
+    "bodyModelPart": "Body",
+    "armsModelPartL": "Arms L",
+    "armsModelPartR": "Arms R",
+    "bodyModelTexture": "From armor",
+    "leggingsModelName": "Default",
+    "leggingsModelPartL": "Leggings L",
+    "leggingsModelPartR": "Leggings R",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Default",
+    "bootsModelPartL": "Boots L",
+    "bootsModelPartR": "Boots R",
+    "bootsModelTexture": "From armor",
+    "helmetImmuneToFire": false,
+    "bodyImmuneToFire": false,
+    "leggingsImmuneToFire": false,
+    "bootsImmuneToFire": false,
+    "maxDamage": 77,
+    "damageValueHelmet": 6,
+    "damageValueBody": 11,
+    "damageValueLeggings": 5,
+    "damageValueBoots": 4,
+    "enchantability": 12,
+    "toughness": 8.4,
+    "knockbackResistance": 0.0,
+    "equipSound": {
+      "value": "entity.elder_guardian.ambient_land"
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:Soulpower"
+      }
+    ]
+  }
+}

@@ -1,10 +1,138 @@
 {
   "id_map": {},
-  "mod_elements": [],
+  "mod_elements": [
+    {
+      "name": "Soulpower",
+      "type": "item",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "soulpower"
+    },
+    {
+      "name": "AncientItems",
+      "type": "tab",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ancient_items"
+    },
+    {
+      "name": "Armorcreativetab",
+      "type": "tab",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "armorcreativetab"
+    },
+    {
+      "name": "Soul_armour_yextureArmor",
+      "type": "armor",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "soul_armour_yexture_armor",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      }
+    },
+    {
+      "name": "Soul_armour_yextureArmorHelmetRecipe",
+      "type": "recipe",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "soul_armour_yexture_armor_helmet_recipe"
+    },
+    {
+      "name": "Soul_armour_yextureArmorBodyRecipe",
+      "type": "recipe",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "soul_armour_yexture_armor_body_recipe"
+    },
+    {
+      "name": "Soul_armour_yextureArmorLeggingsRecipe",
+      "type": "recipe",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "soul_armour_yexture_armor_leggings_recipe"
+    },
+    {
+      "name": "Soul_armour_yextureArmorBootsRecipe",
+      "type": "recipe",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "soul_armour_yexture_armor_boots_recipe"
+    },
+    {
+      "name": "CandyAppleFoodEaten",
+      "type": "procedure",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "candy_apple_food_eaten",
+      "metadata": {
+        "dependencies": []
+      }
+    },
+    {
+      "name": "CandyApple",
+      "type": "food",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "candy_apple"
+    },
+    {
+      "name": "Soularmor",
+      "type": "armor",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "soularmor",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      }
+    }
+  ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "itemGroup.tabarmorcreativetab": "Armor",
+      "item.entities_of_the_unknown.soul_armour_yexture_armor_chestplate": "Soul_armour_yexture Chestplate",
+      "item.entities_of_the_unknown.soul_armour_yexture_armor_leggings": "Soul_armour_yexture Leggings",
+      "item.entities_of_the_unknown.soularmor_boots": "Soul Boots",
+      "item.entities_of_the_unknown.soul_armour_yexture_armor_boots": "Soul_armour_yexture Boots",
+      "item.entities_of_the_unknown.soularmor_helmet": "Soul Helmet",
+      "itemGroup.tabancient_items": "Ancient Items",
+      "item.entities_of_the_unknown.candy_apple": "Candy Apple",
+      "item.entities_of_the_unknown.soularmor_leggings": "Soulr Leggings",
+      "item.entities_of_the_unknown.soulpower": "Soul powder",
+      "item.entities_of_the_unknown.soul_armour_yexture_armor_helmet": "Soul_armour_yexture Helmet",
+      "item.entities_of_the_unknown.soularmor_chestplate": "Soul Chestplate"
+    }
   },
   "foldersRoot": {
     "name": "~",

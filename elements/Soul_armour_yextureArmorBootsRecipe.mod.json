@@ -1,0 +1,46 @@
+{
+  "_fv": 24,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Soulpower"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Soulpower"
+      },
+      {
+        "value": "CUSTOM:Soulpower"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Soulpower"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Soul_armour_yextureArmor.boots"
+    },
+    "name": "soul_armour_yexture_armor_boots_recipe",
+    "namespace": "mod"
+  }
+}

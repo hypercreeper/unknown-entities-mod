@@ -1,1 +1,14 @@
-{}
+{
+  "itemGroup.tabarmorcreativetab": "Armor",
+  "item.entities_of_the_unknown.soul_armour_yexture_armor_chestplate": "Soul_armour_yexture Chestplate",
+  "item.entities_of_the_unknown.soul_armour_yexture_armor_leggings": "Soul_armour_yexture Leggings",
+  "item.entities_of_the_unknown.soularmor_boots": "Soul Boots",
+  "item.entities_of_the_unknown.soul_armour_yexture_armor_boots": "Soul_armour_yexture Boots",
+  "item.entities_of_the_unknown.soularmor_helmet": "Soul Helmet",
+  "itemGroup.tabancient_items": "Ancient Items",
+  "item.entities_of_the_unknown.candy_apple": "Candy Apple",
+  "item.entities_of_the_unknown.soularmor_leggings": "Soulr Leggings",
+  "item.entities_of_the_unknown.soulpower": "Soul powder",
+  "item.entities_of_the_unknown.soul_armour_yexture_armor_helmet": "Soul_armour_yexture Helmet",
+  "item.entities_of_the_unknown.soularmor_chestplate": "Soul Chestplate"
+}

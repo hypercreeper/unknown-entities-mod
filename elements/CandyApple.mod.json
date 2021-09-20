@@ -1,0 +1,28 @@
+{
+  "_fv": 24,
+  "_type": "food",
+  "definition": {
+    "renderType": 0,
+    "texture": "candy_apple",
+    "customModelName": "Normal",
+    "name": "Candy Apple",
+    "rarity": "UNCOMMON",
+    "specialInfo": [
+      "A tastry treat. Dont forget to share it with your friends :]!!!"
+    ],
+    "creativeTab": {
+      "value": "FOOD"
+    },
+    "stackSize": 6,
+    "nutritionalValue": 4,
+    "saturation": 0.3,
+    "eatingSpeed": 23,
+    "resultItem": {
+      "value": ""
+    },
+    "forDogs": false,
+    "isAlwaysEdible": true,
+    "animation": "eat",
+    "hasGlow": false
+  }
+}
