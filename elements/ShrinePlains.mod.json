@@ -1,0 +1,90 @@
+{
+  "_fv": 24,
+  "_type": "biome",
+  "definition": {
+    "name": "Shrine Plains",
+    "groundBlock": {
+      "value": "CUSTOM:ShrineBlockGrass"
+    },
+    "undergroundBlock": {
+      "value": "CUSTOM:ShrineBlock"
+    },
+    "waterColor": {
+      "value": -10092391,
+      "falpha": 0.0
+    },
+    "ambientSound": {
+      "value": ""
+    },
+    "additionsSound": {
+      "value": ""
+    },
+    "music": {
+      "value": ""
+    },
+    "moodSound": {
+      "value": ""
+    },
+    "moodSoundDelay": 6000,
+    "spawnParticles": false,
+    "particleToSpawn": {
+      "value": "EXPLOSION_NORMAL"
+    },
+    "particlesProbability": 0.5,
+    "biomeCategory": "NONE",
+    "parent": {
+      "value": "No parent"
+    },
+    "rainingPossibility": 0.5,
+    "temperature": 0.5,
+    "baseHeight": 0.1,
+    "heightVariation": 0.2,
+    "biomeType": "WARM",
+    "spawnBiome": false,
+    "biomeWeight": 10,
+    "biomeDictionaryTypes": [],
+    "grassPerChunk": 0,
+    "seagrassPerChunk": 0,
+    "flowersPerChunk": 4,
+    "mushroomsPerChunk": 3,
+    "bigMushroomsChunk": 1,
+    "sandPatchesPerChunk": 1,
+    "gravelPatchesPerChunk": 0,
+    "reedsPerChunk": 0,
+    "cactiPerChunk": 0,
+    "treesPerChunk": 2,
+    "vanillaTreeType": "Big trees",
+    "treeType": 1,
+    "minHeight": 7,
+    "maxWaterDepth": 0,
+    "treeStem": {
+      "value": "Blocks.LOG#1"
+    },
+    "treeBranch": {
+      "value": "Blocks.LOG#1"
+    },
+    "treeVines": {
+      "value": ""
+    },
+    "treeFruits": {
+      "value": "Blocks.WARPED_FUNGUS"
+    },
+    "spawnStronghold": true,
+    "spawnMineshaft": false,
+    "spawnPillagerOutpost": true,
+    "villageType": "savanna",
+    "spawnWoodlandMansion": false,
+    "spawnJungleTemple": false,
+    "spawnDesertPyramid": true,
+    "spawnIgloo": false,
+    "spawnOceanMonument": false,
+    "spawnShipwreck": true,
+    "oceanRuinType": "NONE",
+    "defaultFeatures": [
+      "Caves",
+      "Ores",
+      "FrozenTopLayer"
+    ],
+    "spawnEntries": []
+  }
+}

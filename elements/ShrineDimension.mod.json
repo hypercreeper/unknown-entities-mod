@@ -1,0 +1,46 @@
+{
+  "_fv": 24,
+  "_type": "dimension",
+  "definition": {
+    "biomesInDimension": [
+      {
+        "value": "CUSTOM:ShrinePlains"
+      }
+    ],
+    "worldGenType": "Normal world gen",
+    "mainFillerBlock": {
+      "value": "CUSTOM:ShrineBlock"
+    },
+    "fluidBlock": {
+      "value": "Blocks.FLOWING_WATER"
+    },
+    "airColor": {
+      "value": -6750055,
+      "falpha": 0.0
+    },
+    "canRespawnHere": true,
+    "hasFog": false,
+    "isDark": false,
+    "doesWaterVaporize": false,
+    "sleepResult": "ALLOW",
+    "hasSkyLight": true,
+    "imitateOverworldBehaviour": false,
+    "portalFrame": {
+      "value": "Blocks.SOUL_SAND"
+    },
+    "portalParticles": {
+      "value": "SPELL_WITCH"
+    },
+    "portalLuminance": 15,
+    "portalSound": {
+      "value": "block.portal.ambient"
+    },
+    "igniterName": "Soul Powder and Steel",
+    "igniterTab": {
+      "value": "CUSTOM:AncientItems"
+    },
+    "texture": "flintandsoulpowder",
+    "portalTexture": "shrinedimension",
+    "enablePortal": true
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "entities_of_the_unknown:block/shrine_dimension_portal_ew"
+    },
+    "axis=x": {
+      "model": "entities_of_the_unknown:block/shrine_dimension_portal_ns"
+    }
+  }
+}

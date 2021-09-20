@@ -114,15 +114,67 @@
         "eb": true,
         "ec": true
       }
+    },
+    {
+      "name": "ShrineBlock",
+      "type": "block",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "shrine_block"
+    },
+    {
+      "name": "ShrineDimensionBlocks",
+      "type": "tab",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "shrine_dimension_blocks"
+    },
+    {
+      "name": "ShrineBlockGrass",
+      "type": "block",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "shrine_block_grass"
+    },
+    {
+      "name": "ShrinePlains",
+      "type": "biome",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "shrine_plains"
+    },
+    {
+      "name": "ShrineDimension",
+      "type": "dimension",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "shrine_dimension",
+      "metadata": {
+        "ep": true
+      }
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "itemGroup.tabarmorcreativetab": "Armor",
-      "item.entities_of_the_unknown.soul_armour_yexture_armor_chestplate": "Soul_armour_yexture Chestplate",
+      "itemGroup.tabshrine_dimension_blocks": "Shrine Dimension Blocks",
+      "biome.entities_of_the_unknown.shrine_plains": "Shrine Plains",
+      "item.entities_of_the_unknown.shrine_dimension": "Soul Powder and Steel",
       "item.entities_of_the_unknown.soul_armour_yexture_armor_leggings": "Soul_armour_yexture Leggings",
+      "item.entities_of_the_unknown.soul_armour_yexture_armor_chestplate": "Soul_armour_yexture Chestplate",
+      "itemGroup.tabarmorcreativetab": "Armor",
+      "block.entities_of_the_unknown.shrine_block": "Shrine Block",
       "item.entities_of_the_unknown.soularmor_boots": "Soul Boots",
       "item.entities_of_the_unknown.soul_armour_yexture_armor_boots": "Soul_armour_yexture Boots",
       "item.entities_of_the_unknown.soularmor_helmet": "Soul Helmet",
@@ -131,7 +183,8 @@
       "item.entities_of_the_unknown.soularmor_leggings": "Soulr Leggings",
       "item.entities_of_the_unknown.soulpower": "Soul powder",
       "item.entities_of_the_unknown.soul_armour_yexture_armor_helmet": "Soul_armour_yexture Helmet",
-      "item.entities_of_the_unknown.soularmor_chestplate": "Soul Chestplate"
+      "item.entities_of_the_unknown.soularmor_chestplate": "Soul Chestplate",
+      "block.entities_of_the_unknown.shrine_block_grass": "Shrine Block Grass"
     }
   },
   "foldersRoot": {

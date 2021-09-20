@@ -1,0 +1,170 @@
+
+package net.mcreator.entitiesoftheunknown.world.biome;
+
+import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.event.RegistryEvent;
+
+import net.minecraft.world.gen.trunkplacer.MegaJungleTrunkPlacer;
+import net.minecraft.world.gen.treedecorator.TreeDecoratorType;
+import net.minecraft.world.gen.treedecorator.CocoaTreeDecorator;
+import net.minecraft.world.gen.surfacebuilders.SurfaceBuilderConfig;
+import net.minecraft.world.gen.surfacebuilders.SurfaceBuilder;
+import net.minecraft.world.gen.placement.Placement;
+import net.minecraft.world.gen.placement.AtSurfaceWithExtraConfig;
+import net.minecraft.world.gen.foliageplacer.JungleFoliagePlacer;
+import net.minecraft.world.gen.feature.structure.StructureFeatures;
+import net.minecraft.world.gen.feature.TwoLayerFeature;
+import net.minecraft.world.gen.feature.SphereReplaceConfig;
+import net.minecraft.world.gen.feature.Features;
+import net.minecraft.world.gen.feature.FeatureSpread;
+import net.minecraft.world.gen.feature.Feature;
+import net.minecraft.world.gen.feature.BlockClusterFeatureConfig;
+import net.minecraft.world.gen.feature.BigMushroomFeatureConfig;
+import net.minecraft.world.gen.feature.BaseTreeFeatureConfig;
+import net.minecraft.world.gen.blockstateprovider.SimpleBlockStateProvider;
+import net.minecraft.world.gen.blockplacer.SimpleBlockPlacer;
+import net.minecraft.world.gen.GenerationStage;
+import net.minecraft.world.biome.MobSpawnInfo;
+import net.minecraft.world.biome.DefaultBiomeFeatures;
+import net.minecraft.world.biome.BiomeGenerationSettings;
+import net.minecraft.world.biome.BiomeAmbience;
+import net.minecraft.world.biome.Biome;
+import net.minecraft.world.ISeedReader;
+import net.minecraft.util.math.MutableBoundingBox;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.Direction;
+import net.minecraft.block.HugeMushroomBlock;
+import net.minecraft.block.Blocks;
+import net.minecraft.block.BlockState;
+
+import net.mcreator.entitiesoftheunknown.block.ShrineBlockGrassBlock;
+import net.mcreator.entitiesoftheunknown.block.ShrineBlockBlock;
+import net.mcreator.entitiesoftheunknown.EntitiesOfTheUnknownModElements;
+
+import java.util.Set;
+import java.util.Random;
+import java.util.List;
+
+import com.google.common.collect.ImmutableList;
+
+@EntitiesOfTheUnknownModElements.ModElement.Tag
+public class ShrinePlainsBiome extends EntitiesOfTheUnknownModElements.ModElement {
+	public static Biome biome;
+	public ShrinePlainsBiome(EntitiesOfTheUnknownModElements instance) {
+		super(instance, 11);
+		FMLJavaModLoadingContext.get().getModEventBus().register(new BiomeRegisterHandler());
+	}
+	private static class BiomeRegisterHandler {
+		@SubscribeEvent
+		public void registerBiomes(RegistryEvent.Register<Biome> event) {
+			if (biome == null) {
+				BiomeAmbience effects = new BiomeAmbience.Builder().setFogColor(12638463).setWaterColor(-10092391).setWaterFogColor(329011)
+						.withSkyColor(7972607).withFoliageColor(10387789).withGrassColor(9470285).build();
+				BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder().withSurfaceBuilder(
+						SurfaceBuilder.DEFAULT.func_242929_a(new SurfaceBuilderConfig(ShrineBlockGrassBlock.block.getDefaultState(),
+								ShrineBlockBlock.block.getDefaultState(), ShrineBlockBlock.block.getDefaultState())));
+				biomeGenerationSettings.withStructure(StructureFeatures.STRONGHOLD);
+				biomeGenerationSettings.withStructure(StructureFeatures.PILLAGER_OUTPOST);
+				biomeGenerationSettings.withStructure(StructureFeatures.VILLAGE_SAVANNA);
+				biomeGenerationSettings.withStructure(StructureFeatures.DESERT_PYRAMID);
+				biomeGenerationSettings.withStructure(StructureFeatures.SHIPWRECK);
+				biomeGenerationSettings.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Feature.TREE
+						.withConfiguration((new BaseTreeFeatureConfig.Builder(new SimpleBlockStateProvider(Blocks.SPRUCE_LOG.getDefaultState()),
+								new SimpleBlockStateProvider(Blocks.SPRUCE_LOG.getDefaultState()),
+								new JungleFoliagePlacer(FeatureSpread.func_242252_a(2), FeatureSpread.func_242252_a(0), 2),
+								new MegaJungleTrunkPlacer(7, 2, 19), new TwoLayerFeature(1, 1, 2)))
+										.setDecorators(ImmutableList.of(new CustomCocoaTreeDecorator())).setMaxWaterDepth(0).build())
+						.withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT)
+						.withPlacement(Placement.COUNT_EXTRA.configure(new AtSurfaceWithExtraConfig(2, 0.1F, 1))));
+				biomeGenerationSettings.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION,
+						Feature.FLOWER.withConfiguration(Features.Configs.NORMAL_FLOWER_CONFIG)
+								.withPlacement(Features.Placements.VEGETATION_PLACEMENT).withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT)
+								.func_242731_b(4));
+				biomeGenerationSettings.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION,
+						Feature.RANDOM_PATCH.withConfiguration(
+								(new BlockClusterFeatureConfig.Builder(new SimpleBlockStateProvider(Blocks.BROWN_MUSHROOM.getDefaultState()),
+										SimpleBlockPlacer.PLACER)).tries(3).func_227317_b_().build()));
+				biomeGenerationSettings.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION,
+						Feature.RANDOM_PATCH.withConfiguration(
+								(new BlockClusterFeatureConfig.Builder(new SimpleBlockStateProvider(Blocks.RED_MUSHROOM.getDefaultState()),
+										SimpleBlockPlacer.PLACER)).tries(3).func_227317_b_().build()));
+				biomeGenerationSettings.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION,
+						Feature.HUGE_BROWN_MUSHROOM.withConfiguration(new BigMushroomFeatureConfig(
+								new SimpleBlockStateProvider(Blocks.BROWN_MUSHROOM_BLOCK.getDefaultState().with(HugeMushroomBlock.UP, Boolean.TRUE)
+										.with(HugeMushroomBlock.DOWN, Boolean.FALSE)),
+								new SimpleBlockStateProvider(Blocks.MUSHROOM_STEM.getDefaultState().with(HugeMushroomBlock.UP, Boolean.FALSE)
+										.with(HugeMushroomBlock.DOWN, Boolean.FALSE)),
+								1)));
+				biomeGenerationSettings.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION,
+						Feature.HUGE_RED_MUSHROOM.withConfiguration(new BigMushroomFeatureConfig(
+								new SimpleBlockStateProvider(Blocks.RED_MUSHROOM_BLOCK.getDefaultState().with(HugeMushroomBlock.DOWN, Boolean.FALSE)),
+								new SimpleBlockStateProvider(Blocks.MUSHROOM_STEM.getDefaultState().with(HugeMushroomBlock.UP, Boolean.FALSE)
+										.with(HugeMushroomBlock.DOWN, Boolean.FALSE)),
+								1)));
+				biomeGenerationSettings
+						.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION,
+								Feature.DISK
+										.withConfiguration(
+												new SphereReplaceConfig(Blocks.SAND.getDefaultState(), FeatureSpread.func_242253_a(2, 4), 2,
+														ImmutableList.of(ShrineBlockGrassBlock.block.getDefaultState(),
+																ShrineBlockBlock.block.getDefaultState())))
+										.withPlacement(Features.Placements.SEAGRASS_DISK_PLACEMENT).func_242731_b(1));
+				DefaultBiomeFeatures.withCavesAndCanyons(biomeGenerationSettings);
+				DefaultBiomeFeatures.withOverworldOres(biomeGenerationSettings);
+				DefaultBiomeFeatures.withFrozenTopLayer(biomeGenerationSettings);
+				MobSpawnInfo.Builder mobSpawnInfo = new MobSpawnInfo.Builder().isValidSpawnBiomeForPlayer();
+				biome = new Biome.Builder().precipitation(Biome.RainType.RAIN).category(Biome.Category.NONE).depth(0.1f).scale(0.2f).temperature(0.5f)
+						.downfall(0.5f).setEffects(effects).withMobSpawnSettings(mobSpawnInfo.copy())
+						.withGenerationSettings(biomeGenerationSettings.build()).build();
+				event.getRegistry().register(biome.setRegistryName("entities_of_the_unknown:shrine_plains"));
+			}
+		}
+	}
+	@Override
+	public void init(FMLCommonSetupEvent event) {
+	}
+	private static class CustomCocoaTreeDecorator extends CocoaTreeDecorator {
+		public static final CustomCocoaTreeDecorator instance = new CustomCocoaTreeDecorator();
+		public static com.mojang.serialization.Codec<CustomCocoaTreeDecorator> codec;
+		public static TreeDecoratorType tdt;
+		static {
+			codec = com.mojang.serialization.Codec.unit(() -> instance);
+			tdt = new TreeDecoratorType(codec);
+			tdt.setRegistryName("shrine_plains_ctd");
+			ForgeRegistries.TREE_DECORATOR_TYPES.register(tdt);
+		}
+		public CustomCocoaTreeDecorator() {
+			super(0.2f);
+		}
+
+		@Override
+		protected TreeDecoratorType<?> func_230380_a_() {
+			return tdt;
+		}
+
+		@Override
+		public void func_225576_a_(ISeedReader p_225576_1_, Random p_225576_2_, List<BlockPos> p_225576_3_, List<BlockPos> p_225576_4_,
+				Set<BlockPos> p_225576_5_, MutableBoundingBox p_225576_6_) {
+			if (!(p_225576_2_.nextFloat() >= 0.2F)) {
+				int i = p_225576_3_.get(0).getY();
+				p_225576_3_.stream().filter((p_236867_1_) -> {
+					return p_236867_1_.getY() - i <= 2;
+				}).forEach((p_242865_5_) -> {
+					for (Direction direction : Direction.Plane.HORIZONTAL) {
+						if (p_225576_2_.nextFloat() <= 0.25F) {
+							Direction direction1 = direction.getOpposite();
+							BlockPos blockpos = p_242865_5_.add(direction1.getXOffset(), 0, direction1.getZOffset());
+							if (Feature.isAirAt(p_225576_1_, blockpos)) {
+								BlockState blockstate = Blocks.WARPED_FUNGUS.getDefaultState();
+								this.func_227423_a_(p_225576_1_, blockpos, blockstate, p_225576_5_, p_225576_6_);
+							}
+						}
+					}
+				});
+			}
+		}
+	}
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "entities_of_the_unknown:blocks/shrineblocktexture",
+    "up": "entities_of_the_unknown:blocks/shrineblocktop",
+    "north": "entities_of_the_unknown:blocks/shrineblockgrass",
+    "east": "entities_of_the_unknown:blocks/shrineblockgrass",
+    "south": "entities_of_the_unknown:blocks/shrineblockgrass",
+    "west": "entities_of_the_unknown:blocks/shrineblockgrass",
+    "particle": "entities_of_the_unknown:blocks/shrineblocktexture"
+  }
+}
