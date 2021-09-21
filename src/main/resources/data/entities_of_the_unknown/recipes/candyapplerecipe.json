@@ -1,0 +1,24 @@
+{
+  "group": "entities_of_the_unknown",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "1",
+    "2"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:stick"
+    },
+    "1": {
+      "item": "minecraft:apple"
+    },
+    "2": {
+      "item": "entities_of_the_unknown:caramelfood"
+    }
+  },
+  "result": {
+    "item": "entities_of_the_unknown:candy_apple",
+    "count": 1
+  }
+}
