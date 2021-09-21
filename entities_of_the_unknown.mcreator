@@ -162,6 +162,15 @@
       "metadata": {
         "ep": true
       }
+    },
+    {
+      "name": "Evileyespainting",
+      "type": "painting",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "evileyespainting"
     }
   ],
   "variable_elements": [],
