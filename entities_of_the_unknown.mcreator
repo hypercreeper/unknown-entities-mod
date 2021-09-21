@@ -171,6 +171,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "soul_powder_and_steel_crafting_recipe"
+    },
+    {
+      "name": "EasterEggPainting",
+      "type": "painting",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "easter_egg_painting"
     }
   ],
   "variable_elements": [],
