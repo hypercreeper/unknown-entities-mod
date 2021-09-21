@@ -225,6 +225,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "candyapplerecipe"
+    },
+    {
+      "name": "EasterEggPainting",
+      "type": "painting",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "easter_egg_painting"
     }
   ],
   "variable_elements": [],
