@@ -164,13 +164,31 @@
       }
     },
     {
+<<<<<<< HEAD
       "name": "Evileyespainting",
       "type": "painting",
+=======
+      "name": "SoulPowderAndSteelCraftingRecipe",
+      "type": "recipe",
+>>>>>>> b3802e16ec5365740155067097bedcf0170ea793
       "sortid": 12,
       "compiles": true,
       "locked_code": false,
       "ids": {},
+<<<<<<< HEAD
       "registry_name": "evileyespainting"
+=======
+      "registry_name": "soul_powder_and_steel_crafting_recipe"
+    },
+    {
+      "name": "EasterEggPainting",
+      "type": "painting",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "easter_egg_painting"
+>>>>>>> b3802e16ec5365740155067097bedcf0170ea793
     }
   ],
   "variable_elements": [],
