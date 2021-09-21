@@ -1,0 +1,31 @@
+{
+  "display": {
+    "background": "minecraft:textures/block/stone.png",
+    "icon": {
+      "item": "entities_of_the_unknown:candy_apple"
+    },
+    "title": {
+      "translate": "advancements.lookstoogood.title"
+    },
+    "description": {
+      "translate": "advancements.lookstoogood.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "lookstoogood": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "item": "entities_of_the_unknown:candy_apple"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "experience": 18
+  }
+}

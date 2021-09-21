@@ -1,0 +1,33 @@
+{
+  "group": "entities_of_the_unknown",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 12",
+    "3 5",
+    " 78"
+  ],
+  "key": {
+    "1": {
+      "item": "entities_of_the_unknown:leaf"
+    },
+    "2": {
+      "item": "minecraft:string"
+    },
+    "3": {
+      "item": "entities_of_the_unknown:leaf"
+    },
+    "5": {
+      "item": "minecraft:string"
+    },
+    "7": {
+      "item": "entities_of_the_unknown:leaf"
+    },
+    "8": {
+      "item": "minecraft:string"
+    }
+  },
+  "result": {
+    "item": "entities_of_the_unknown:leafbow",
+    "count": 1
+  }
+}

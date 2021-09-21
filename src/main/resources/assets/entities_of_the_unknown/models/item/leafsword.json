@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "entities_of_the_unknown:items/leaf_sword"
+  }
+}

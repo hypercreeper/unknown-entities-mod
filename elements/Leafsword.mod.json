@@ -1,0 +1,33 @@
+{
+  "_fv": 24,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "leaf_sword",
+    "customModelName": "Normal",
+    "name": "Leaf sword",
+    "specialInfo": [
+      "super cool and strudy but dont throw it to waste"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:AncientItems"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 1,
+    "efficiency": 8.0,
+    "attackSpeed": 2.0,
+    "enchantability": 12,
+    "damageVsEntity": 6.8,
+    "usageCount": 151,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:Leaf"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

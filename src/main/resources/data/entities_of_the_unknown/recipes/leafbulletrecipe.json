@@ -1,0 +1,19 @@
+{
+  "group": "entities_of_the_unknown",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01"
+  ],
+  "key": {
+    "0": {
+      "item": "entities_of_the_unknown:leaf"
+    },
+    "1": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "entities_of_the_unknown:leafbullet",
+    "count": 3
+  }
+}
