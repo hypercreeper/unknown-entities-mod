@@ -234,6 +234,24 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "easter_egg_painting"
+    },
+    {
+      "name": "Uses",
+      "type": "tab",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "uses"
+    },
+    {
+      "name": "Leaf",
+      "type": "item",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "leaf"
     }
   ],
   "variable_elements": [],
@@ -253,7 +271,9 @@
       "item.entities_of_the_unknown.butter": "Butter",
       "item.entities_of_the_unknown.soul_armour_yexture_armor_boots": "Soul_armour_yexture Boots",
       "item.entities_of_the_unknown.soularmor_helmet": "Soul Helmet",
+      "item.entities_of_the_unknown.leaf": "Leaf",
       "itemGroup.tabancient_items": "Ancient Items",
+      "itemGroup.tabuses": "Uses",
       "item.entities_of_the_unknown.candy_apple": "Candy Apple",
       "item.entities_of_the_unknown.soularmor_leggings": "Soulr Leggings",
       "item.entities_of_the_unknown.soulpower": "Soul powder",
