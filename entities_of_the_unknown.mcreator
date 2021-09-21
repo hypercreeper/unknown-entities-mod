@@ -162,6 +162,15 @@
       "metadata": {
         "ep": true
       }
+    },
+    {
+      "name": "SoulPowderAndSteelCraftingRecipe",
+      "type": "recipe",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "soul_powder_and_steel_crafting_recipe"
     }
   ],
   "variable_elements": [],
