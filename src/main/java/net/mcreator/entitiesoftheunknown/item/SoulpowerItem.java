@@ -33,7 +33,7 @@ public class SoulpowerItem extends EntitiesOfTheUnknownModElements.ModElement {
 	}
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
-			super(new Item.Properties().group(AncientItemsItemGroup.tab).maxStackSize(64).isImmuneToFire().rarity(Rarity.EPIC));
+			super(new Item.Properties().group(AncientItemsItemGroup.tab).maxStackSize(64).isImmuneToFire().rarity(Rarity.RARE));
 			setRegistryName("soulpower");
 		}
 

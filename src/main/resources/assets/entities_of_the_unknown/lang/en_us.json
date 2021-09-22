@@ -1,9 +1,16 @@
 {
+<<<<<<< Updated upstream
   "itemGroup.tabshrine_dimension_blocks": "Shrine Dimension Blocks",
   "item.entities_of_the_unknown.lemonjelly": "Lemonjelly",
   "item.entities_of_the_unknown.shrine_dimension": "Soul Powder and Steel",
   "item.entities_of_the_unknown.leafsword": "Leaf sword",
   "itemGroup.tabarmorcreativetab": "tools and combat",
+=======
+  "item.entities_of_the_unknown.shinedgem": "Shined gem",
+  "itemGroup.tabarmorcreativetab": "Armor",
+  "item.entities_of_the_unknown.soul_armour_yexture_armor_chestplate": "Soul_armour_yexture Chestplate",
+  "item.entities_of_the_unknown.soul_armour_yexture_armor_leggings": "Soul_armour_yexture Leggings",
+>>>>>>> Stashed changes
   "item.entities_of_the_unknown.soularmor_boots": "Soul Boots",
   "item.entities_of_the_unknown.uglybootthingy": "Ugly boot thingy",
   "advancements.itssocold.title": "Its so cold",

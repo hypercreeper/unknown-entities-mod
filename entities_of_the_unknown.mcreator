@@ -326,6 +326,7 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
+<<<<<<< Updated upstream
       "registry_name": "blackberryjelly"
     },
     {
@@ -462,17 +463,42 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "uglybootthingy"
+=======
+      "registry_name": "soularmor",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      }
+    },
+    {
+      "name": "Shinedgem",
+      "type": "item",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "shinedgem"
+>>>>>>> Stashed changes
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
+<<<<<<< Updated upstream
       "itemGroup.tabshrine_dimension_blocks": "Shrine Dimension Blocks",
       "item.entities_of_the_unknown.lemonjelly": "Lemonjelly",
       "item.entities_of_the_unknown.shrine_dimension": "Soul Powder and Steel",
       "item.entities_of_the_unknown.leafsword": "Leaf sword",
       "itemGroup.tabarmorcreativetab": "tools and combat",
+=======
+      "item.entities_of_the_unknown.shinedgem": "Shined gem",
+      "itemGroup.tabarmorcreativetab": "Armor",
+      "item.entities_of_the_unknown.soul_armour_yexture_armor_chestplate": "Soul_armour_yexture Chestplate",
+      "item.entities_of_the_unknown.soul_armour_yexture_armor_leggings": "Soul_armour_yexture Leggings",
+>>>>>>> Stashed changes
       "item.entities_of_the_unknown.soularmor_boots": "Soul Boots",
       "item.entities_of_the_unknown.uglybootthingy": "Ugly boot thingy",
       "advancements.itssocold.title": "Its so cold",
@@ -524,6 +550,7 @@
     "dependants": [],
     "mcreatorDependencies": [],
     "currentGenerator": "forge-1.16.5",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.entitiesoftheunknown",
     "lockBaseModFiles": false
   },
