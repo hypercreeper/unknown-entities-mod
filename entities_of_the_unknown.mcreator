@@ -29,57 +29,6 @@
       "registry_name": "armorcreativetab"
     },
     {
-      "name": "Soul_armour_yextureArmor",
-      "type": "armor",
-      "sortid": 3,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "soul_armour_yexture_armor",
-      "metadata": {
-        "eh": true,
-        "el": true,
-        "eb": true,
-        "ec": true
-      }
-    },
-    {
-      "name": "Soul_armour_yextureArmorHelmetRecipe",
-      "type": "recipe",
-      "sortid": 4,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "soul_armour_yexture_armor_helmet_recipe"
-    },
-    {
-      "name": "Soul_armour_yextureArmorBodyRecipe",
-      "type": "recipe",
-      "sortid": 5,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "soul_armour_yexture_armor_body_recipe"
-    },
-    {
-      "name": "Soul_armour_yextureArmorLeggingsRecipe",
-      "type": "recipe",
-      "sortid": 6,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "soul_armour_yexture_armor_leggings_recipe"
-    },
-    {
-      "name": "Soul_armour_yextureArmorBootsRecipe",
-      "type": "recipe",
-      "sortid": 7,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "soul_armour_yexture_armor_boots_recipe"
-    },
-    {
       "name": "CandyAppleFoodEaten",
       "type": "procedure",
       "sortid": 8,
@@ -171,6 +120,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "evileyespainting"
+    },
+    {
+      "name": "Shinedgem",
+      "type": "item",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "shinedgem"
     },
     {
       "name": "Butter",
@@ -488,22 +446,31 @@
       "registry_name": "lemonjellyrecipe"
     },
     {
-      "name": "ShrinedGem",
+      "name": "Uglychestplatethingy",
       "type": "item",
       "sortid": 46,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "shrined_gem"
+      "registry_name": "uglychestplatethingy"
     },
     {
-      "name": "LeafPower",
-      "type": "enchantment",
+      "name": "Uglybootthingy",
+      "type": "item",
       "sortid": 47,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "leaf_power"
+      "registry_name": "uglybootthingy"
+    },
+    {
+      "name": "Glowflower",
+      "type": "plant",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "glowflower"
     }
   ],
   "variable_elements": [],
@@ -512,31 +479,30 @@
     "en_us": {
       "itemGroup.tabshrine_dimension_blocks": "Shrine Dimension Blocks",
       "item.entities_of_the_unknown.lemonjelly": "Lemonjelly",
-      "item.entities_of_the_unknown.leafsword": "Leaf sword",
       "item.entities_of_the_unknown.shrine_dimension": "Soul Powder and Steel",
+      "item.entities_of_the_unknown.leafsword": "Leaf sword",
       "itemGroup.tabarmorcreativetab": "tools and combat",
-      "item.entities_of_the_unknown.soul_armour_yexture_armor_leggings": "Soul_armour_yexture Leggings",
+      "block.entities_of_the_unknown.glowflower": "Glowflower",
       "item.entities_of_the_unknown.soularmor_boots": "Soul Boots",
+      "item.entities_of_the_unknown.uglybootthingy": "Ugly boot thingy",
       "advancements.itssocold.title": "Its so cold",
-      "item.entities_of_the_unknown.soul_armour_yexture_armor_boots": "Soul_armour_yexture Boots",
       "item.entities_of_the_unknown.soularmor_helmet": "Soul Helmet",
       "item.entities_of_the_unknown.leafbow": "Leaf bow",
-      "enchantment.entities_of_the_unknown.leaf_power": "Leaf Power",
       "itemGroup.tabuses": "Uses",
       "item.entities_of_the_unknown.lemon": "Lemon",
       "item.entities_of_the_unknown.lemongel": "Lemongel",
       "item.entities_of_the_unknown.soulpower": "Soul powder",
       "advancements.lookstoogood.title": "tastes too good",
       "biome.entities_of_the_unknown.shrine_plains": "Shrine Plains",
+      "item.entities_of_the_unknown.shinedgem": "Shinedgem",
       "advancements.itssocold.descr": "get a soul chestplate",
-      "item.entities_of_the_unknown.caramelfood": "Caramelfood",
+      "item.entities_of_the_unknown.caramelfood": "Caramel",
       "item.entities_of_the_unknown.blackberryjelly": "Blackberry jelly",
-      "item.entities_of_the_unknown.soul_armour_yexture_armor_chestplate": "Soul_armour_yexture Chestplate",
+      "item.entities_of_the_unknown.uglychestplatethingy": "Uglychestplatethingy",
       "block.entities_of_the_unknown.shrine_block": "Shrine Block",
       "item.entities_of_the_unknown.strawberrygel": "Strawberrygel",
       "item.entities_of_the_unknown.leafbullet": "Leaf bullet",
       "advancements.lookstoogood.descr": "get a candy apple and enjoy",
-      "item.entities_of_the_unknown.shrined_gem": "Shrined Gem",
       "item.entities_of_the_unknown.jelly": "Jelly",
       "item.entities_of_the_unknown.blackberrygel": "Blackberrygel",
       "item.entities_of_the_unknown.butter": "Butter",
@@ -546,7 +512,6 @@
       "item.entities_of_the_unknown.candy_apple": "Candy Apple",
       "item.entities_of_the_unknown.strawberry": "Strawberry",
       "item.entities_of_the_unknown.soularmor_leggings": "Soulr Leggings",
-      "item.entities_of_the_unknown.soul_armour_yexture_armor_helmet": "Soul_armour_yexture Helmet",
       "item.entities_of_the_unknown.soularmor_chestplate": "Soul Chestplate",
       "block.entities_of_the_unknown.shrine_block_grass": "Shrine Block Grass"
     }

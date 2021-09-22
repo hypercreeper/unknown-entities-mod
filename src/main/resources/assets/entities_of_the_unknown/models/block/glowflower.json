@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "entities_of_the_unknown:blocks/glow_flower",
+    "particle": "entities_of_the_unknown:blocks/glow_flower"
+  }
+}
