@@ -18,15 +18,11 @@ import net.mcreator.entitiesoftheunknown.EntitiesOfTheUnknownModElements;
 import java.util.List;
 
 @EntitiesOfTheUnknownModElements.ModElement.Tag
-public class ShinedgemItem extends EntitiesOfTheUnknownModElements.ModElement {
-	@ObjectHolder("entities_of_the_unknown:shinedgem")
+public class ShrinedGemItem extends EntitiesOfTheUnknownModElements.ModElement {
+	@ObjectHolder("entities_of_the_unknown:shrined_gem")
 	public static final Item block = null;
-	public ShinedgemItem(EntitiesOfTheUnknownModElements instance) {
-<<<<<<< Updated upstream
-		super(instance, 13);
-=======
-		super(instance, 10);
->>>>>>> Stashed changes
+	public ShrinedGemItem(EntitiesOfTheUnknownModElements instance) {
+		super(instance, 46);
 	}
 
 	@Override
@@ -35,12 +31,8 @@ public class ShinedgemItem extends EntitiesOfTheUnknownModElements.ModElement {
 	}
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
-<<<<<<< Updated upstream
-			super(new Item.Properties().group(AncientItemsItemGroup.tab).maxStackSize(64).rarity(Rarity.COMMON));
-=======
-			super(new Item.Properties().group(AncientItemsItemGroup.tab).maxStackSize(20).isImmuneToFire().rarity(Rarity.RARE));
->>>>>>> Stashed changes
-			setRegistryName("shinedgem");
+			super(new Item.Properties().group(AncientItemsItemGroup.tab).maxStackSize(64).rarity(Rarity.RARE));
+			setRegistryName("shrined_gem");
 		}
 
 		@Override
@@ -55,22 +47,14 @@ public class ShinedgemItem extends EntitiesOfTheUnknownModElements.ModElement {
 
 		@Override
 		public float getDestroySpeed(ItemStack par1ItemStack, BlockState par2Block) {
-<<<<<<< Updated upstream
 			return 1F;
-=======
-			return 0F;
->>>>>>> Stashed changes
 		}
 
 		@Override
 		public void addInformation(ItemStack itemstack, World world, List<ITextComponent> list, ITooltipFlag flag) {
 			super.addInformation(itemstack, world, list, flag);
-<<<<<<< Updated upstream
-			list.add(new StringTextComponent("very rare"));
-			list.add(new StringTextComponent("rery shiny. better keep it in your inventory than hanging around near thieves in your pockets"));
-=======
-			list.add(new StringTextComponent("very rare and very shiney. loved by the ones who shine."));
->>>>>>> Stashed changes
+			list.add(new StringTextComponent(
+					"so shiny and valuable. better leave it in your inventory than hanging out in your pockets near thieves."));
 		}
 	}
 }

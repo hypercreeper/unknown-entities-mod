@@ -5,9 +5,8 @@
     "renderType": 0,
     "texture": "shined_gem",
     "customModelName": "Normal",
-<<<<<<< Updated upstream
-    "name": "Shinedgem",
-    "rarity": "COMMON",
+    "name": "Shrined Gem",
+    "rarity": "RARE",
     "creativeTab": {
       "value": "CUSTOM:AncientItems"
     },
@@ -15,38 +14,18 @@
     "enchantability": 0,
     "useDuration": 0,
     "toolType": 1.0,
-=======
-    "name": "Shined gem",
-    "rarity": "RARE",
-    "creativeTab": {
-      "value": "CUSTOM:AncientItems"
-    },
-    "stackSize": 20,
-    "enchantability": 0,
-    "useDuration": 0,
-    "toolType": 0.0,
->>>>>>> Stashed changes
     "damageCount": 0,
     "recipeRemainder": {
       "value": ""
     },
     "destroyAnyBlock": false,
-<<<<<<< Updated upstream
     "immuneToFire": false,
-=======
-    "immuneToFire": true,
->>>>>>> Stashed changes
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInfo": [
-<<<<<<< Updated upstream
-      "very rare",
-      "rery shiny. better keep it in your inventory than hanging around near thieves in your pockets"
-=======
-      "very rare and very shiney. loved by the ones who shine."
->>>>>>> Stashed changes
+      "so shiny and valuable. better leave it in your inventory than hanging out in your pockets near thieves."
     ],
     "hasGlow": false,
     "guiBoundTo": "<NONE>",
