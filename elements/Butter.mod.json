@@ -6,9 +6,9 @@
     "texture": "butter",
     "customModelName": "Normal",
     "name": "Butter",
-    "rarity": "COMMON",
+    "rarity": "UNCOMMON",
     "creativeTab": {
-      "value": "MISC"
+      "value": "CUSTOM:Uses"
     },
     "stackSize": 64,
     "enchantability": 0,

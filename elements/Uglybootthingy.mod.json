@@ -3,12 +3,12 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "caramel",
+    "texture": "ugly_boot_thingy",
     "customModelName": "Normal",
-    "name": "Caramelfood",
-    "rarity": "COMMON",
+    "name": "Ugly boot thingy",
+    "rarity": "EPIC",
     "creativeTab": {
-      "value": "CUSTOM:Uses"
+      "value": "No creative tab entry"
     },
     "stackSize": 64,
     "enchantability": 0,
@@ -25,7 +25,7 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInfo": [
-      "so tasty but so sticky once its on your clothes"
+      "its so useless dont even try"
     ],
     "hasGlow": false,
     "guiBoundTo": "<NONE>",
