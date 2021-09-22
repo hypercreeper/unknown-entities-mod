@@ -13,7 +13,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.IItemTier;
 import net.minecraft.client.util.ITooltipFlag;
 
-import net.mcreator.entitiesoftheunknown.itemgroup.AncientItemsItemGroup;
+import net.mcreator.entitiesoftheunknown.itemgroup.ArmorcreativetabItemGroup;
 import net.mcreator.entitiesoftheunknown.EntitiesOfTheUnknownModElements;
 
 import java.util.List;
@@ -52,7 +52,7 @@ public class LeafswordItem extends EntitiesOfTheUnknownModElements.ModElement {
 			public Ingredient getRepairMaterial() {
 				return Ingredient.fromStacks(new ItemStack(LeafItem.block));
 			}
-		}, 3, -2f, new Item.Properties().group(AncientItemsItemGroup.tab)) {
+		}, 3, -2f, new Item.Properties().group(ArmorcreativetabItemGroup.tab)) {
 			@Override
 			public void addInformation(ItemStack itemstack, World world, List<ITextComponent> list, ITooltipFlag flag) {
 				super.addInformation(itemstack, world, list, flag);

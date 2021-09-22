@@ -10,7 +10,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.block.BlockState;
 
-import net.mcreator.entitiesoftheunknown.itemgroup.UsesItemGroup;
+import net.mcreator.entitiesoftheunknown.itemgroup.ArmorcreativetabItemGroup;
 import net.mcreator.entitiesoftheunknown.EntitiesOfTheUnknownModElements;
 
 @EntitiesOfTheUnknownModElements.ModElement.Tag
@@ -27,7 +27,7 @@ public class LeafbulletItem extends EntitiesOfTheUnknownModElements.ModElement {
 	}
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
-			super(new Item.Properties().group(UsesItemGroup.tab).maxStackSize(64).rarity(Rarity.UNCOMMON));
+			super(new Item.Properties().group(ArmorcreativetabItemGroup.tab).maxStackSize(64).rarity(Rarity.UNCOMMON));
 			setRegistryName("leafbullet");
 		}
 

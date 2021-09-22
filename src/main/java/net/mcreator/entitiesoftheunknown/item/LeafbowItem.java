@@ -32,7 +32,7 @@ import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.Entity;
 import net.minecraft.client.util.ITooltipFlag;
 
-import net.mcreator.entitiesoftheunknown.itemgroup.AncientItemsItemGroup;
+import net.mcreator.entitiesoftheunknown.itemgroup.ArmorcreativetabItemGroup;
 import net.mcreator.entitiesoftheunknown.entity.renderer.LeafbowRenderer;
 import net.mcreator.entitiesoftheunknown.EntitiesOfTheUnknownModElements;
 
@@ -58,7 +58,7 @@ public class LeafbowItem extends EntitiesOfTheUnknownModElements.ModElement {
 	}
 	public static class ItemRanged extends Item {
 		public ItemRanged() {
-			super(new Item.Properties().group(AncientItemsItemGroup.tab).maxDamage(100));
+			super(new Item.Properties().group(ArmorcreativetabItemGroup.tab).maxDamage(100));
 			setRegistryName("leafbow");
 		}
 

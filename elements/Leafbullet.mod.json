@@ -8,7 +8,7 @@
     "name": "Leaf bullet",
     "rarity": "UNCOMMON",
     "creativeTab": {
-      "value": "CUSTOM:Uses"
+      "value": "CUSTOM:Armorcreativetab"
     },
     "stackSize": 64,
     "enchantability": 0,
