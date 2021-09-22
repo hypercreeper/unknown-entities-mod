@@ -3,7 +3,7 @@
   "_type": "food",
   "definition": {
     "renderType": 0,
-    "texture": "copy_52361153",
+    "texture": "lemon",
     "customModelName": "Normal",
     "name": "Lemon",
     "rarity": "UNCOMMON",
