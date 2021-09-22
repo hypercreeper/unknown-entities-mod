@@ -5,7 +5,7 @@
     "renderType": 0,
     "texture": "caramel",
     "customModelName": "Normal",
-    "name": "Caramelfood",
+    "name": "Caramel",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:Uses"
