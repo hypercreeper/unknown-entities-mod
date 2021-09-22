@@ -513,6 +513,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "vlexadoite_trade_gui"
+    },
+    {
+      "name": "Vlexadoite",
+      "type": "livingentity",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "vlexadoite"
     }
   ],
   "variable_elements": [],
@@ -521,8 +530,8 @@
     "en_us": {
       "itemGroup.tabshrine_dimension_blocks": "Shrine Dimension Blocks",
       "item.entities_of_the_unknown.lemonjelly": "Lemonjelly",
-      "item.entities_of_the_unknown.leafsword": "Leaf sword",
       "item.entities_of_the_unknown.shrine_dimension": "Soul Powder and Steel",
+      "item.entities_of_the_unknown.leafsword": "Leaf sword",
       "itemGroup.tabarmorcreativetab": "tools and combat",
       "item.entities_of_the_unknown.soul_armour_yexture_armor_leggings": "Soul_armour_yexture Leggings",
       "item.entities_of_the_unknown.soularmor_boots": "Soul Boots",
@@ -533,7 +542,9 @@
       "enchantment.entities_of_the_unknown.leaf_power": "Leaf Power",
       "itemGroup.tabuses": "Uses",
       "item.entities_of_the_unknown.lemon": "Lemon",
+      "entity.entities_of_the_unknown.vlexadoite": "Vlexadoite",
       "item.entities_of_the_unknown.lemongel": "Lemongel",
+      "item.entities_of_the_unknown.vlexadoite_spawn_egg": "Vlexadoite Spawn Egg",
       "item.entities_of_the_unknown.soulpower": "Soul powder",
       "advancements.lookstoogood.title": "tastes too good",
       "biome.entities_of_the_unknown.shrine_plains": "Shrine Plains",
