@@ -504,6 +504,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "leaf_power"
+    },
+    {
+      "name": "VlexadoiteTradeGUI",
+      "type": "gui",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "vlexadoite_trade_gui"
     }
   ],
   "variable_elements": [],
