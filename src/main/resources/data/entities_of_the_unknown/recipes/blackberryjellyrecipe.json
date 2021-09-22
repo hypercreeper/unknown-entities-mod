@@ -1,0 +1,16 @@
+{
+  "group": "entities_of_the_unknown",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "entities_of_the_unknown:blackberrygel"
+    },
+    {
+      "item": "minecraft:slime_ball"
+    }
+  ],
+  "result": {
+    "item": "entities_of_the_unknown:blackberryjelly",
+    "count": 1
+  }
+}

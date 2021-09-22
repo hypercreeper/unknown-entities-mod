@@ -3,18 +3,18 @@
   "_type": "food",
   "definition": {
     "renderType": 0,
-    "texture": "jelly",
+    "texture": "copy_52361153",
     "customModelName": "Normal",
-    "name": "Jelly",
-    "rarity": "UNCOMMON",
+    "name": "Lemon",
+    "rarity": "COMMON",
     "specialInfo": [
-      "so gummy and slimy but super yummy"
+      "so jucy. good luck once its in your eyes >:]"
     ],
     "creativeTab": {
       "value": "FOOD"
     },
     "stackSize": 64,
-    "nutritionalValue": 5,
+    "nutritionalValue": 4,
     "saturation": 0.3,
     "eatingSpeed": 32,
     "resultItem": {

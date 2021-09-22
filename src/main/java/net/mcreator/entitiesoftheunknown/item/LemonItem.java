@@ -19,11 +19,11 @@ import net.mcreator.entitiesoftheunknown.EntitiesOfTheUnknownModElements;
 import java.util.List;
 
 @EntitiesOfTheUnknownModElements.ModElement.Tag
-public class JellyItem extends EntitiesOfTheUnknownModElements.ModElement {
-	@ObjectHolder("entities_of_the_unknown:jelly")
+public class LemonItem extends EntitiesOfTheUnknownModElements.ModElement {
+	@ObjectHolder("entities_of_the_unknown:lemon")
 	public static final Item block = null;
-	public JellyItem(EntitiesOfTheUnknownModElements instance) {
-		super(instance, 32);
+	public LemonItem(EntitiesOfTheUnknownModElements instance) {
+		super(instance, 44);
 	}
 
 	@Override
@@ -32,9 +32,9 @@ public class JellyItem extends EntitiesOfTheUnknownModElements.ModElement {
 	}
 	public static class FoodItemCustom extends Item {
 		public FoodItemCustom() {
-			super(new Item.Properties().group(ItemGroup.FOOD).maxStackSize(64).rarity(Rarity.UNCOMMON)
-					.food((new Food.Builder()).hunger(5).saturation(0.3f).build()));
-			setRegistryName("jelly");
+			super(new Item.Properties().group(ItemGroup.FOOD).maxStackSize(64).rarity(Rarity.COMMON)
+					.food((new Food.Builder()).hunger(4).saturation(0.3f).build()));
+			setRegistryName("lemon");
 		}
 
 		@Override
@@ -45,7 +45,7 @@ public class JellyItem extends EntitiesOfTheUnknownModElements.ModElement {
 		@Override
 		public void addInformation(ItemStack itemstack, World world, List<ITextComponent> list, ITooltipFlag flag) {
 			super.addInformation(itemstack, world, list, flag);
-			list.add(new StringTextComponent("so gummy and slimy but super yummy"));
+			list.add(new StringTextComponent("so jucy. good luck once its in your eyes >:]"));
 		}
 	}
 }
