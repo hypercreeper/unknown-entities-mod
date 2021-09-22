@@ -4,7 +4,7 @@
   "definition": {
     "name": "tools and combat",
     "icon": {
-      "value": "Items.DIAMOND_CHESTPLATE"
+      "value": "CUSTOM:Soul_armour_yextureArmor.body"
     },
     "showSearch": false
   }

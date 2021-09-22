@@ -7,7 +7,9 @@
     "customModelName": "Normal",
     "name": "Lemonjelly",
     "rarity": "UNCOMMON",
-    "specialInfo": [],
+    "specialInfo": [
+      "super sour and squishy (please dont squish it thats disgusting)"
+    ],
     "creativeTab": {
       "value": "FOOD"
     },

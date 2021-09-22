@@ -38,7 +38,7 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:Soul_armour_yextureArmor.boots"
+      "value": "CUSTOM:Soularmor.boots"
     },
     "name": "soul_armour_yexture_armor_boots_recipe",
     "namespace": "mod"
