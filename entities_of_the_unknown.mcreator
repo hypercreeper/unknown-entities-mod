@@ -480,6 +480,33 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "soulbliver"
+    },
+    {
+      "name": "Bowlofcandy",
+      "type": "food",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bowlofcandy"
+    },
+    {
+      "name": "Leafaxe",
+      "type": "tool",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "leafaxe"
+    },
+    {
+      "name": "Leafaxerecipe",
+      "type": "recipe",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "leafaxerecipe"
     }
   ],
   "variable_elements": [],
@@ -501,6 +528,8 @@
       "item.entities_of_the_unknown.lemon": "Lemon",
       "item.entities_of_the_unknown.lemongel": "Lemongel",
       "item.entities_of_the_unknown.soulpower": "Soul powder",
+      "item.entities_of_the_unknown.bowlofcandy": "Bowl of candy",
+      "item.entities_of_the_unknown.leafaxe": "Leaf axe",
       "advancements.lookstoogood.title": "tastes too good",
       "biome.entities_of_the_unknown.shrine_plains": "Shrine Plains",
       "item.entities_of_the_unknown.shinedgem": "Shinedgem",

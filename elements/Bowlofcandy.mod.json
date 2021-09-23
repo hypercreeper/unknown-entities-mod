@@ -1,0 +1,28 @@
+{
+  "_fv": 24,
+  "_type": "food",
+  "definition": {
+    "renderType": 0,
+    "texture": "bowl_or_candy_cream",
+    "customModelName": "Normal",
+    "name": "Bowl of candy",
+    "rarity": "RARE",
+    "specialInfo": [
+      "so creamy and full of candies. too good to even share"
+    ],
+    "creativeTab": {
+      "value": "FOOD"
+    },
+    "stackSize": 55,
+    "nutritionalValue": 12,
+    "saturation": 0.3,
+    "eatingSpeed": 18,
+    "resultItem": {
+      "value": ""
+    },
+    "forDogs": false,
+    "isAlwaysEdible": true,
+    "animation": "eat",
+    "hasGlow": false
+  }
+}
