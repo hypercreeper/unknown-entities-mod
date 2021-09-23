@@ -6,7 +6,7 @@
     "texture": "shined_gem",
     "customModelName": "Normal",
     "name": "Shrined Gem",
-    "rarity": "RARE",
+    "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:AncientItems"
     },
@@ -25,7 +25,7 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInfo": [
-      "so shiny and valuable. better leave it in your inventory than hanging out in your pockets near thieves."
+      "<Insert special info>"
     ],
     "hasGlow": false,
     "guiBoundTo": "<NONE>",

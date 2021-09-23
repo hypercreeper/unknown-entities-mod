@@ -20,6 +20,7 @@ import net.minecraft.util.ActionResultType;
 import net.minecraft.util.ActionResult;
 import net.minecraft.network.IPacket;
 import net.minecraft.item.UseAction;
+import net.minecraft.item.ShootableItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.entity.projectile.AbstractArrowEntity;
@@ -58,7 +59,7 @@ public class LeafbowItem extends EntitiesOfTheUnknownModElements.ModElement {
 	}
 	public static class ItemRanged extends Item {
 		public ItemRanged() {
-			super(new Item.Properties().group(ArmorcreativetabItemGroup.tab).maxDamage(100));
+			super(new Item.Properties().group(ArmorcreativetabItemGroup.tab).maxDamage(150));
 			setRegistryName("leafbow");
 		}
 
@@ -92,9 +93,36 @@ public class LeafbowItem extends EntitiesOfTheUnknownModElements.ModElement {
 				double y = entity.getPosY();
 				double z = entity.getPosZ();
 				if (true) {
-					ArrowCustomEntity entityarrow = shoot(world, entity, random, 3.1f, 6.8999999999999995, 8);
-					itemstack.damageItem(1, entity, e -> e.sendBreakAnimation(entity.getActiveHand()));
-					entityarrow.pickupStatus = AbstractArrowEntity.PickupStatus.DISALLOWED;
+					ItemStack stack = ShootableItem.getHeldAmmo(entity, e -> e.getItem() == LeafbulletItem.block);
+					if (stack == ItemStack.EMPTY) {
+						for (int i = 0; i < entity.inventory.mainInventory.size(); i++) {
+							ItemStack teststack = entity.inventory.mainInventory.get(i);
+							if (teststack != null && teststack.getItem() == LeafbulletItem.block) {
+								stack = teststack;
+								break;
+							}
+						}
+					}
+					if (entity.abilities.isCreativeMode || stack != ItemStack.EMPTY) {
+						ArrowCustomEntity entityarrow = shoot(world, entity, random, 2f, 5.5, 8);
+						itemstack.damageItem(1, entity, e -> e.sendBreakAnimation(entity.getActiveHand()));
+						if (entity.abilities.isCreativeMode) {
+							entityarrow.pickupStatus = AbstractArrowEntity.PickupStatus.CREATIVE_ONLY;
+						} else {
+							if (new ItemStack(LeafbulletItem.block).isDamageable()) {
+								if (stack.attemptDamageItem(1, random, entity)) {
+									stack.shrink(1);
+									stack.setDamage(0);
+									if (stack.isEmpty())
+										entity.inventory.deleteStack(stack);
+								}
+							} else {
+								stack.shrink(1);
+								if (stack.isEmpty())
+									entity.inventory.deleteStack(stack);
+							}
+						}
+					}
 				}
 			}
 		}
@@ -131,7 +159,7 @@ public class LeafbowItem extends EntitiesOfTheUnknownModElements.ModElement {
 
 		@Override
 		protected ItemStack getArrowStack() {
-			return null;
+			return new ItemStack(LeafbulletItem.block);
 		}
 
 		@Override
@@ -161,6 +189,7 @@ public class LeafbowItem extends EntitiesOfTheUnknownModElements.ModElement {
 		entityarrow.setIsCritical(true);
 		entityarrow.setDamage(damage);
 		entityarrow.setKnockbackStrength(knockback);
+		entityarrow.setFire(100);
 		world.addEntity(entityarrow);
 		double x = entity.getPosX();
 		double y = entity.getPosY();
@@ -176,11 +205,12 @@ public class LeafbowItem extends EntitiesOfTheUnknownModElements.ModElement {
 		double d0 = target.getPosY() + (double) target.getEyeHeight() - 1.1;
 		double d1 = target.getPosX() - entity.getPosX();
 		double d3 = target.getPosZ() - entity.getPosZ();
-		entityarrow.shoot(d1, d0 - entityarrow.getPosY() + (double) MathHelper.sqrt(d1 * d1 + d3 * d3) * 0.2F, d3, 3.1f * 2, 12.0F);
+		entityarrow.shoot(d1, d0 - entityarrow.getPosY() + (double) MathHelper.sqrt(d1 * d1 + d3 * d3) * 0.2F, d3, 2f * 2, 12.0F);
 		entityarrow.setSilent(true);
-		entityarrow.setDamage(6.8999999999999995);
+		entityarrow.setDamage(5.5);
 		entityarrow.setKnockbackStrength(8);
 		entityarrow.setIsCritical(true);
+		entityarrow.setFire(100);
 		entity.world.addEntity(entityarrow);
 		double x = entity.getPosX();
 		double y = entity.getPosY();

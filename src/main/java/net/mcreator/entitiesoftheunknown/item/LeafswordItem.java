@@ -56,7 +56,7 @@ public class LeafswordItem extends EntitiesOfTheUnknownModElements.ModElement {
 			@Override
 			public void addInformation(ItemStack itemstack, World world, List<ITextComponent> list, ITooltipFlag flag) {
 				super.addInformation(itemstack, world, list, flag);
-				list.add(new StringTextComponent("super cool and strudy but dont throw it to waste"));
+				list.add(new StringTextComponent("super cool and sturdy but dont throw it to waste"));
 			}
 		}.setRegistryName("leafsword"));
 	}

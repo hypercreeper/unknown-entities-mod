@@ -8,9 +8,8 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.entity.Entity;
-import net.minecraft.client.renderer.entity.model.BipedModel;
-import net.minecraft.client.renderer.entity.layers.BipedArmorLayer;
-import net.minecraft.client.renderer.entity.BipedRenderer;
+import net.minecraft.client.renderer.entity.model.VillagerModel;
+import net.minecraft.client.renderer.entity.MobRenderer;
 
 import net.mcreator.entitiesoftheunknown.entity.VlexadoiteEntity;
 
@@ -20,16 +19,13 @@ public class VlexadoiteRenderer {
 		@SubscribeEvent
 		@OnlyIn(Dist.CLIENT)
 		public void registerModels(ModelRegistryEvent event) {
-			RenderingRegistry.registerEntityRenderingHandler(VlexadoiteEntity.entity, renderManager -> {
-				BipedRenderer customRender = new BipedRenderer(renderManager, new BipedModel(0), 0.5f) {
-					@Override
-					public ResourceLocation getEntityTexture(Entity entity) {
-						return new ResourceLocation("entities_of_the_unknown:textures/very_rare_vlexadoite.png");
-					}
-				};
-				customRender.addLayer(new BipedArmorLayer(customRender, new BipedModel(0.5f), new BipedModel(1)));
-				return customRender;
-			});
+			RenderingRegistry.registerEntityRenderingHandler(VlexadoiteEntity.entity,
+					renderManager -> new MobRenderer(renderManager, new VillagerModel(0), 0.5f) {
+						@Override
+						public ResourceLocation getEntityTexture(Entity entity) {
+							return new ResourceLocation("entities_of_the_unknown:textures/very_rare_vlexadoite.png");
+						}
+					});
 		}
 	}
 }

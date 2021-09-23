@@ -22,7 +22,7 @@ public class ShrinedGemItem extends EntitiesOfTheUnknownModElements.ModElement {
 	@ObjectHolder("entities_of_the_unknown:shrined_gem")
 	public static final Item block = null;
 	public ShrinedGemItem(EntitiesOfTheUnknownModElements instance) {
-		super(instance, 46);
+		super(instance, 52);
 	}
 
 	@Override
@@ -31,7 +31,7 @@ public class ShrinedGemItem extends EntitiesOfTheUnknownModElements.ModElement {
 	}
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
-			super(new Item.Properties().group(AncientItemsItemGroup.tab).maxStackSize(64).rarity(Rarity.RARE));
+			super(new Item.Properties().group(AncientItemsItemGroup.tab).maxStackSize(64).rarity(Rarity.COMMON));
 			setRegistryName("shrined_gem");
 		}
 
@@ -53,8 +53,7 @@ public class ShrinedGemItem extends EntitiesOfTheUnknownModElements.ModElement {
 		@Override
 		public void addInformation(ItemStack itemstack, World world, List<ITextComponent> list, ITooltipFlag flag) {
 			super.addInformation(itemstack, world, list, flag);
-			list.add(new StringTextComponent(
-					"so shiny and valuable. better leave it in your inventory than hanging out in your pockets near thieves."));
+			list.add(new StringTextComponent("<Insert special info>"));
 		}
 	}
 }
