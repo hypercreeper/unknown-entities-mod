@@ -480,42 +480,6 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "soulbliver"
-    },
-    {
-      "name": "Bowlofcandy",
-      "type": "food",
-      "sortid": 50,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "bowlofcandy"
-    },
-    {
-      "name": "Leafaxe",
-      "type": "tool",
-      "sortid": 51,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "leafaxe"
-    },
-    {
-      "name": "Leafaxerecipe",
-      "type": "recipe",
-      "sortid": 52,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "leafaxerecipe"
-    },
-    {
-      "name": "Butterrecipe",
-      "type": "recipe",
-      "sortid": 53,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "butterrecipe"
     }
   ],
   "variable_elements": [],
@@ -523,9 +487,9 @@
   "language_map": {
     "en_us": {
       "itemGroup.tabshrine_dimension_blocks": "Shrine Dimension Blocks",
-      "item.entities_of_the_unknown.lemonjelly": "Lemon jelly",
-      "item.entities_of_the_unknown.shrine_dimension": "Soul Powder and Steel",
+      "item.entities_of_the_unknown.lemonjelly": "Lemonjelly",
       "item.entities_of_the_unknown.leafsword": "Leaf sword",
+      "item.entities_of_the_unknown.shrine_dimension": "Soul Powder and Steel",
       "itemGroup.tabarmorcreativetab": "tools and combat",
       "block.entities_of_the_unknown.glowflower": "Glowflower",
       "item.entities_of_the_unknown.soularmor_boots": "Soul Boots",
@@ -535,10 +499,8 @@
       "item.entities_of_the_unknown.leafbow": "Leaf bow",
       "itemGroup.tabuses": "Uses",
       "item.entities_of_the_unknown.lemon": "Lemon",
-      "item.entities_of_the_unknown.lemongel": "Lemon gel",
+      "item.entities_of_the_unknown.lemongel": "Lemongel",
       "item.entities_of_the_unknown.soulpower": "Soul powder",
-      "item.entities_of_the_unknown.bowlofcandy": "Bowl of candy",
-      "item.entities_of_the_unknown.leafaxe": "Leaf axe",
       "advancements.lookstoogood.title": "tastes too good",
       "biome.entities_of_the_unknown.shrine_plains": "Shrine Plains",
       "item.entities_of_the_unknown.shinedgem": "Shinedgem",
@@ -548,11 +510,11 @@
       "item.entities_of_the_unknown.blackberryjelly": "Blackberry jelly",
       "item.entities_of_the_unknown.uglychestplatethingy": "Uglychestplatethingy",
       "block.entities_of_the_unknown.shrine_block": "Shrine Block",
-      "item.entities_of_the_unknown.strawberrygel": "Strawberry gel",
+      "item.entities_of_the_unknown.strawberrygel": "Strawberrygel",
       "item.entities_of_the_unknown.leafbullet": "Leaf bullet",
       "advancements.lookstoogood.descr": "get a candy apple and enjoy",
       "item.entities_of_the_unknown.jelly": "Jelly",
-      "item.entities_of_the_unknown.blackberrygel": "Blackberry gel",
+      "item.entities_of_the_unknown.blackberrygel": "Blackberrygel",
       "item.entities_of_the_unknown.butter": "Butter",
       "item.entities_of_the_unknown.leaf": "Leaf",
       "itemGroup.tabancient_items": "Ancient Items",
