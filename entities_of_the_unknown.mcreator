@@ -471,6 +471,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "glowflower"
+    },
+    {
+      "name": "Soulbliver",
+      "type": "block",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "soulbliver"
     }
   ],
   "variable_elements": [],
@@ -495,6 +504,7 @@
       "advancements.lookstoogood.title": "tastes too good",
       "biome.entities_of_the_unknown.shrine_plains": "Shrine Plains",
       "item.entities_of_the_unknown.shinedgem": "Shinedgem",
+      "block.entities_of_the_unknown.soulbliver": "Soul bliver",
       "advancements.itssocold.descr": "get a soul chestplate",
       "item.entities_of_the_unknown.caramelfood": "Caramel",
       "item.entities_of_the_unknown.blackberryjelly": "Blackberry jelly",

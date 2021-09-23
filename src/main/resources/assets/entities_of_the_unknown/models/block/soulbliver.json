@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "entities_of_the_unknown:blocks/soul_bliver",
+    "up": "entities_of_the_unknown:blocks/soul_bliver",
+    "north": "entities_of_the_unknown:blocks/soul_bliver",
+    "east": "entities_of_the_unknown:blocks/soul_bliver",
+    "south": "entities_of_the_unknown:blocks/soul_bliver",
+    "west": "entities_of_the_unknown:blocks/soul_bliver",
+    "particle": "entities_of_the_unknown:blocks/soul_bliver"
+  }
+}
