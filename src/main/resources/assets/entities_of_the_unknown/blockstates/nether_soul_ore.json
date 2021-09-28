@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "entities_of_the_unknown:block/nether_soul_ore"
+    },
+    "facing=east": {
+      "model": "entities_of_the_unknown:block/nether_soul_ore",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "entities_of_the_unknown:block/nether_soul_ore",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "entities_of_the_unknown:block/nether_soul_ore",
+      "y": 270
+    }
+  }
+}
