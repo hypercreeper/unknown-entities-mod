@@ -129,15 +129,6 @@
     "blocksToReplace": [
       {
         "value": "Blocks.STONE"
-      },
-      {
-        "value": "Blocks.NETHERRACK"
-      },
-      {
-        "value": "CUSTOM:ShrineBlock"
-      },
-      {
-        "value": "CUSTOM:ShrineBlockGrass"
       }
     ],
     "frequencyPerChunks": 10,

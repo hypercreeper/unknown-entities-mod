@@ -1,0 +1,29 @@
+{
+  "_fv": 24,
+  "_type": "food",
+  "definition": {
+    "renderType": 0,
+    "texture": "strawberry_soda",
+    "customModelName": "Normal",
+    "name": "Strawberry soda",
+    "rarity": "UNCOMMON",
+    "specialInfo": [
+      "so refreshing and smells great",
+      "dont forget to gift one to your friend[or keep it to your self >:)]"
+    ],
+    "creativeTab": {
+      "value": "FOOD"
+    },
+    "stackSize": 5,
+    "nutritionalValue": 10,
+    "saturation": 0.3,
+    "eatingSpeed": 32,
+    "resultItem": {
+      "value": ""
+    },
+    "forDogs": false,
+    "isAlwaysEdible": false,
+    "animation": "drink",
+    "hasGlow": false
+  }
+}
