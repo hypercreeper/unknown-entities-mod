@@ -123,6 +123,12 @@ public class NetherSoulOreBlock extends EntitiesOfTheUnknownModElements.ModEleme
 			boolean blockCriteria = false;
 			if (blockAt.getBlock() == Blocks.STONE)
 				blockCriteria = true;
+			if (blockAt.getBlock() == Blocks.NETHERRACK)
+				blockCriteria = true;
+			if (blockAt.getBlock() == ShrineBlockBlock.block)
+				blockCriteria = true;
+			if (blockAt.getBlock() == ShrineBlockGrassBlock.block)
+				blockCriteria = true;
 			return blockCriteria;
 		}
 
