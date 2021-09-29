@@ -1,0 +1,31 @@
+{
+  "_fv": 24,
+  "_type": "food",
+  "definition": {
+    "renderType": 0,
+    "texture": "chips_bag",
+    "customModelName": "Normal",
+    "name": "Bag of chips",
+    "rarity": "RARE",
+    "specialInfo": [
+      "super salty AND DONT SHARE IT"
+    ],
+    "creativeTab": {
+      "value": "FOOD"
+    },
+    "stackSize": 1,
+    "nutritionalValue": 4,
+    "saturation": 0.3,
+    "eatingSpeed": 32,
+    "resultItem": {
+      "value": "CUSTOM:Chips"
+    },
+    "forDogs": false,
+    "isAlwaysEdible": true,
+    "animation": "eat",
+    "hasGlow": false,
+    "onRightClicked": {
+      "name": "BagofchipsRightClickedInAir"
+    }
+  }
+}

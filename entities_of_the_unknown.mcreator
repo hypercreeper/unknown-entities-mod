@@ -518,13 +518,48 @@
       "registry_name": "strawberrysoda"
     },
     {
-      "name": "Tester",
-      "type": "item",
+      "name": "Chips",
+      "type": "food",
       "sortid": 55,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "tester"
+      "registry_name": "chips"
+    },
+    {
+      "name": "Bagofchips",
+      "type": "food",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bagofchips"
+    },
+    {
+      "name": "BagofchipsRightClickedInAir",
+      "type": "procedure",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bagofchips_right_clicked_in_air",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Strawberrysodarecipe",
+      "type": "recipe",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "strawberrysodarecipe"
     }
   ],
   "variable_elements": [],
@@ -545,13 +580,14 @@
       "item.entities_of_the_unknown.leafbow": "Leaf bow",
       "itemGroup.tabuses": "Uses",
       "block.entities_of_the_unknown.nether_soul_ore": "Nether Soul Ore",
+      "item.entities_of_the_unknown.chips": "Chips",
       "item.entities_of_the_unknown.lemon": "Lemon",
       "entity.entities_of_the_unknown.vlexadoite": "Vlexadoite",
-      "item.entities_of_the_unknown.tester": "Tester",
       "item.entities_of_the_unknown.lemongel": "Lemon gel",
       "item.entities_of_the_unknown.vlexadoite_spawn_egg": "Vlexadoite Spawn Egg",
       "item.entities_of_the_unknown.strawberrysoda": "Strawberry soda",
       "item.entities_of_the_unknown.soulpower": "Soul powder",
+      "item.entities_of_the_unknown.bagofchips": "Bag of chips",
       "advancements.lookstoogood.title": "tastes too good",
       "biome.entities_of_the_unknown.shrine_plains": "Shrine Plains",
       "block.entities_of_the_unknown.soulbliver": "Soul bliver",
