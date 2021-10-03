@@ -19,6 +19,7 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.client.util.ITooltipFlag;
 
 import net.mcreator.entitiesoftheunknown.procedures.BagofchipsRightClickedInAirProcedure;
+import net.mcreator.entitiesoftheunknown.procedures.BagofchipsFoodEatenProcedure;
 import net.mcreator.entitiesoftheunknown.EntitiesOfTheUnknownModElements;
 
 import java.util.Map;
@@ -39,8 +40,8 @@ public class BagofchipsItem extends EntitiesOfTheUnknownModElements.ModElement {
 	}
 	public static class FoodItemCustom extends Item {
 		public FoodItemCustom() {
-			super(new Item.Properties().group(ItemGroup.FOOD).maxStackSize(1).rarity(Rarity.RARE)
-					.food((new Food.Builder()).hunger(4).saturation(0.3f).setAlwaysEdible().build()));
+			super(new Item.Properties().group(ItemGroup.FOOD).maxStackSize(1).rarity(Rarity.COMMON)
+					.food((new Food.Builder()).hunger(4).saturation(0.6f).setAlwaysEdible().build()));
 			setRegistryName("bagofchips");
 		}
 
@@ -74,6 +75,14 @@ public class BagofchipsItem extends EntitiesOfTheUnknownModElements.ModElement {
 		public ItemStack onItemUseFinish(ItemStack itemstack, World world, LivingEntity entity) {
 			ItemStack retval = new ItemStack(ChipsItem.block);
 			super.onItemUseFinish(itemstack, world, entity);
+			double x = entity.getPosX();
+			double y = entity.getPosY();
+			double z = entity.getPosZ();
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				BagofchipsFoodEatenProcedure.executeProcedure($_dependencies);
+			}
 			if (itemstack.isEmpty()) {
 				return retval;
 			} else {

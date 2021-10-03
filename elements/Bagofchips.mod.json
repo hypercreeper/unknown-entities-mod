@@ -6,7 +6,7 @@
     "texture": "chips_bag",
     "customModelName": "Normal",
     "name": "Bag of chips",
-    "rarity": "RARE",
+    "rarity": "COMMON",
     "specialInfo": [
       "super salty AND DONT SHARE IT"
     ],
@@ -15,7 +15,7 @@
     },
     "stackSize": 1,
     "nutritionalValue": 4,
-    "saturation": 0.3,
+    "saturation": 0.6,
     "eatingSpeed": 32,
     "resultItem": {
       "value": "CUSTOM:Chips"
@@ -26,6 +26,9 @@
     "hasGlow": false,
     "onRightClicked": {
       "name": "BagofchipsRightClickedInAir"
+    },
+    "onEaten": {
+      "name": "BagofchipsFoodEaten"
     }
   }
 }

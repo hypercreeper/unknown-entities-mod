@@ -560,6 +560,23 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "strawberrysodarecipe"
+    },
+    {
+      "name": "BagofchipsFoodEaten",
+      "type": "procedure",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bagofchips_food_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
