@@ -4,10 +4,10 @@
   "definition": {
     "name": "Leaf Power",
     "type": "WEAPON",
-    "rarity": "UNCOMMON",
+    "rarity": "RARE",
     "minLevel": 1,
-    "maxLevel": 3,
-    "damageModifier": 5,
+    "maxLevel": 5,
+    "damageModifier": 2,
     "compatibleEnchantments": [],
     "compatibleItems": [
       {
@@ -15,6 +15,12 @@
       },
       {
         "value": "CUSTOM:Leafbow"
+      },
+      {
+        "value": "CUSTOM:LeafAxe"
+      },
+      {
+        "value": "CUSTOM:Leafbullet"
       }
     ],
     "isTreasureEnchantment": true,
