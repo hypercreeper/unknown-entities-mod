@@ -48,22 +48,22 @@
     "gravelPatchesPerChunk": 0,
     "reedsPerChunk": 0,
     "cactiPerChunk": 0,
-    "treesPerChunk": 9,
+    "treesPerChunk": 12,
     "vanillaTreeType": "Big trees",
     "treeType": 1,
     "minHeight": 7,
     "maxWaterDepth": 0,
     "treeStem": {
-      "value": "Blocks.LOG#1"
+      "value": "CUSTOM:SoulLog"
     },
     "treeBranch": {
-      "value": "Blocks.LOG#1"
+      "value": "CUSTOM:SoulLeaves"
     },
     "treeVines": {
-      "value": ""
+      "value": "Blocks.VINE"
     },
     "treeFruits": {
-      "value": "Blocks.WARPED_FUNGUS"
+      "value": "Blocks.AIR"
     },
     "spawnStronghold": true,
     "spawnMineshaft": true,
@@ -84,6 +84,34 @@
       "ExtraEmeraldOre",
       "DeadBushes"
     ],
-    "spawnEntries": []
+    "spawnEntries": [
+      {
+        "entity": {
+          "value": "CUSTOM:Vlexadoite"
+        },
+        "minGroup": 4,
+        "maxGroup": 4,
+        "weight": 20,
+        "spawnType": "ambient"
+      },
+      {
+        "entity": {
+          "value": "EntityZombie"
+        },
+        "minGroup": 4,
+        "maxGroup": 4,
+        "weight": 20,
+        "spawnType": "monster"
+      },
+      {
+        "entity": {
+          "value": "EntitySkeleton"
+        },
+        "minGroup": 4,
+        "maxGroup": 4,
+        "weight": 20,
+        "spawnType": "monster"
+      }
+    ]
   }
 }

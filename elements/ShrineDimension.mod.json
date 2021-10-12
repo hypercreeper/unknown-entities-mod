@@ -22,9 +22,9 @@
     "hasFog": false,
     "isDark": false,
     "doesWaterVaporize": false,
-    "sleepResult": "ALLOW",
+    "sleepResult": "BED_EXPLODES",
     "hasSkyLight": true,
-    "imitateOverworldBehaviour": false,
+    "imitateOverworldBehaviour": true,
     "portalFrame": {
       "value": "Blocks.SOUL_SAND"
     },

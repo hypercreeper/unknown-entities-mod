@@ -8,7 +8,9 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.RegistryEvent;
 
 import net.minecraft.world.gen.trunkplacer.MegaJungleTrunkPlacer;
+import net.minecraft.world.gen.treedecorator.TrunkVineTreeDecorator;
 import net.minecraft.world.gen.treedecorator.TreeDecoratorType;
+import net.minecraft.world.gen.treedecorator.LeaveVineTreeDecorator;
 import net.minecraft.world.gen.treedecorator.CocoaTreeDecorator;
 import net.minecraft.world.gen.surfacebuilders.SurfaceBuilderConfig;
 import net.minecraft.world.gen.surfacebuilders.SurfaceBuilder;
@@ -32,14 +34,21 @@ import net.minecraft.world.biome.DefaultBiomeFeatures;
 import net.minecraft.world.biome.BiomeGenerationSettings;
 import net.minecraft.world.biome.BiomeAmbience;
 import net.minecraft.world.biome.Biome;
+import net.minecraft.world.IWorldWriter;
 import net.minecraft.world.ISeedReader;
 import net.minecraft.util.math.MutableBoundingBox;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.Direction;
+import net.minecraft.state.BooleanProperty;
+import net.minecraft.entity.EntityType;
+import net.minecraft.entity.EntityClassification;
 import net.minecraft.block.HugeMushroomBlock;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 
+import net.mcreator.entitiesoftheunknown.entity.VlexadoiteEntity;
+import net.mcreator.entitiesoftheunknown.block.SoulLogBlock;
+import net.mcreator.entitiesoftheunknown.block.SoulLeavesBlock;
 import net.mcreator.entitiesoftheunknown.block.ShrineBlockGrassBlock;
 import net.mcreator.entitiesoftheunknown.block.ShrineBlockBlock;
 import net.mcreator.entitiesoftheunknown.EntitiesOfTheUnknownModElements;
@@ -74,13 +83,15 @@ public class ShrinePlainsBiome extends EntitiesOfTheUnknownModElements.ModElemen
 				biomeGenerationSettings.withStructure(StructureFeatures.DESERT_PYRAMID);
 				biomeGenerationSettings.withStructure(StructureFeatures.SHIPWRECK);
 				biomeGenerationSettings.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Feature.TREE
-						.withConfiguration((new BaseTreeFeatureConfig.Builder(new SimpleBlockStateProvider(Blocks.SPRUCE_LOG.getDefaultState()),
-								new SimpleBlockStateProvider(Blocks.SPRUCE_LOG.getDefaultState()),
+						.withConfiguration((new BaseTreeFeatureConfig.Builder(new SimpleBlockStateProvider(SoulLogBlock.block.getDefaultState()),
+								new SimpleBlockStateProvider(SoulLeavesBlock.block.getDefaultState()),
 								new JungleFoliagePlacer(FeatureSpread.func_242252_a(2), FeatureSpread.func_242252_a(0), 2),
 								new MegaJungleTrunkPlacer(7, 2, 19), new TwoLayerFeature(1, 1, 2)))
-										.setDecorators(ImmutableList.of(new CustomCocoaTreeDecorator())).setMaxWaterDepth(0).build())
+										.setDecorators(ImmutableList.of(CustomLeaveVineTreeDecorator.instance, CustomTrunkVineTreeDecorator.instance,
+												new CustomCocoaTreeDecorator()))
+										.setMaxWaterDepth(0).build())
 						.withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT)
-						.withPlacement(Placement.COUNT_EXTRA.configure(new AtSurfaceWithExtraConfig(9, 0.1F, 1))));
+						.withPlacement(Placement.COUNT_EXTRA.configure(new AtSurfaceWithExtraConfig(12, 0.1F, 1))));
 				biomeGenerationSettings.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION,
 						Feature.FLOWER.withConfiguration(Features.Configs.NORMAL_FLOWER_CONFIG)
 								.withPlacement(Features.Placements.VEGETATION_PLACEMENT).withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT)
@@ -121,6 +132,9 @@ public class ShrinePlainsBiome extends EntitiesOfTheUnknownModElements.ModElemen
 				DefaultBiomeFeatures.withEmeraldOre(biomeGenerationSettings);
 				DefaultBiomeFeatures.withDesertDeadBushes(biomeGenerationSettings);
 				MobSpawnInfo.Builder mobSpawnInfo = new MobSpawnInfo.Builder().isValidSpawnBiomeForPlayer();
+				mobSpawnInfo.withSpawner(EntityClassification.AMBIENT, new MobSpawnInfo.Spawners(VlexadoiteEntity.entity, 20, 4, 4));
+				mobSpawnInfo.withSpawner(EntityClassification.MONSTER, new MobSpawnInfo.Spawners(EntityType.ZOMBIE, 20, 4, 4));
+				mobSpawnInfo.withSpawner(EntityClassification.MONSTER, new MobSpawnInfo.Spawners(EntityType.SKELETON, 20, 4, 4));
 				biome = new Biome.Builder().precipitation(Biome.RainType.RAIN).category(Biome.Category.NONE).depth(0.1f).scale(0.2f).temperature(0.5f)
 						.downfall(0.5f).setEffects(effects).withMobSpawnSettings(mobSpawnInfo.copy())
 						.withGenerationSettings(biomeGenerationSettings.build()).build();
@@ -131,6 +145,48 @@ public class ShrinePlainsBiome extends EntitiesOfTheUnknownModElements.ModElemen
 	@Override
 	public void init(FMLCommonSetupEvent event) {
 	}
+	private static class CustomLeaveVineTreeDecorator extends LeaveVineTreeDecorator {
+		public static final CustomLeaveVineTreeDecorator instance = new CustomLeaveVineTreeDecorator();
+		public static com.mojang.serialization.Codec<LeaveVineTreeDecorator> codec;
+		public static TreeDecoratorType tdt;
+		static {
+			codec = com.mojang.serialization.Codec.unit(() -> instance);
+			tdt = new TreeDecoratorType(codec);
+			tdt.setRegistryName("shrine_plains_lvtd");
+			ForgeRegistries.TREE_DECORATOR_TYPES.register(tdt);
+		}
+		@Override
+		protected TreeDecoratorType<?> func_230380_a_() {
+			return tdt;
+		}
+
+		@Override
+		protected void func_227424_a_(IWorldWriter ww, BlockPos bp, BooleanProperty bpr, Set<BlockPos> sbc, MutableBoundingBox mbb) {
+			this.func_227423_a_(ww, bp, Blocks.VINE.getDefaultState(), sbc, mbb);
+		}
+	}
+
+	private static class CustomTrunkVineTreeDecorator extends TrunkVineTreeDecorator {
+		public static final CustomTrunkVineTreeDecorator instance = new CustomTrunkVineTreeDecorator();
+		public static com.mojang.serialization.Codec<CustomTrunkVineTreeDecorator> codec;
+		public static TreeDecoratorType tdt;
+		static {
+			codec = com.mojang.serialization.Codec.unit(() -> instance);
+			tdt = new TreeDecoratorType(codec);
+			tdt.setRegistryName("shrine_plains_tvtd");
+			ForgeRegistries.TREE_DECORATOR_TYPES.register(tdt);
+		}
+		@Override
+		protected TreeDecoratorType<?> func_230380_a_() {
+			return tdt;
+		}
+
+		@Override
+		protected void func_227424_a_(IWorldWriter ww, BlockPos bp, BooleanProperty bpr, Set<BlockPos> sbc, MutableBoundingBox mbb) {
+			this.func_227423_a_(ww, bp, Blocks.VINE.getDefaultState(), sbc, mbb);
+		}
+	}
+
 	private static class CustomCocoaTreeDecorator extends CocoaTreeDecorator {
 		public static final CustomCocoaTreeDecorator instance = new CustomCocoaTreeDecorator();
 		public static com.mojang.serialization.Codec<CustomCocoaTreeDecorator> codec;
@@ -163,7 +219,7 @@ public class ShrinePlainsBiome extends EntitiesOfTheUnknownModElements.ModElemen
 							Direction direction1 = direction.getOpposite();
 							BlockPos blockpos = p_242865_5_.add(direction1.getXOffset(), 0, direction1.getZOffset());
 							if (Feature.isAirAt(p_225576_1_, blockpos)) {
-								BlockState blockstate = Blocks.WARPED_FUNGUS.getDefaultState();
+								BlockState blockstate = Blocks.AIR.getDefaultState();
 								this.func_227423_a_(p_225576_1_, blockpos, blockstate, p_225576_5_, p_225576_6_);
 							}
 						}
