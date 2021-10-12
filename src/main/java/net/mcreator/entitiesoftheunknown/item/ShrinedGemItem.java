@@ -53,7 +53,7 @@ public class ShrinedGemItem extends EntitiesOfTheUnknownModElements.ModElement {
 		@Override
 		public void addInformation(ItemStack itemstack, World world, List<ITextComponent> list, ITooltipFlag flag) {
 			super.addInformation(itemstack, world, list, flag);
-			list.add(new StringTextComponent("<Insert special info>"));
+			list.add(new StringTextComponent("super shiny and glowy. use it for the best"));
 		}
 	}
 }

@@ -102,7 +102,7 @@ public class ShrineDimensionDimension extends EntitiesOfTheUnknownModElements.Mo
 		DimensionRenderInfo customEffect = new DimensionRenderInfo(128, true, DimensionRenderInfo.FogType.NORMAL, false, false) {
 			@Override
 			public Vector3d func_230494_a_(Vector3d color, float sunHeight) {
-				return new Vector3d(0.6, 0, 0.6);
+				return new Vector3d(0, 0.6, 0.6);
 			}
 
 			@Override
