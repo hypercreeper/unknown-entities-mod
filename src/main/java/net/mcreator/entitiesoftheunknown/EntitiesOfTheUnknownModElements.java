@@ -45,6 +45,8 @@ public class EntitiesOfTheUnknownModElements {
 	public final List<Supplier<Enchantment>> enchantments = new ArrayList<>();
 	public static Map<ResourceLocation, net.minecraft.util.SoundEvent> sounds = new HashMap<>();
 	public EntitiesOfTheUnknownModElements() {
+		sounds.put(new ResourceLocation("entities_of_the_unknown", "hologrophy"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("entities_of_the_unknown", "hologrophy")));
 		try {
 			ModFileScanData modFileInfo = ModList.get().getModFileById("entities_of_the_unknown").getFile().getScanResult();
 			Set<ModFileScanData.AnnotationData> annotations = modFileInfo.getAnnotations();

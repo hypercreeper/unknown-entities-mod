@@ -1,0 +1,17 @@
+{
+  "_fv": 24,
+  "_type": "musicdisc",
+  "definition": {
+    "texture": "hologrophy",
+    "name": "Hologrophy",
+    "description": "it makes a soul like vibe when properly heard.",
+    "creativeTab": {
+      "value": "CUSTOM:AncientItems"
+    },
+    "music": {
+      "value": "CUSTOM:hologrophy"
+    },
+    "specialInfo": [],
+    "hasGlow": false
+  }
+}

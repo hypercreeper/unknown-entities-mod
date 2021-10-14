@@ -1,1 +1,11 @@
-{}
+{
+  "hologrophy": {
+    "category": "record",
+    "sounds": [
+      {
+        "name": "entities_of_the_unknown:hologrophy",
+        "stream": true
+      }
+    ]
+  }
+}
