@@ -630,6 +630,24 @@
           }
         ]
       }
+    },
+    {
+      "name": "InvisibleSignEditorGUI",
+      "type": "gui",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "invisible_sign_editor_gui"
+    },
+    {
+      "name": "InvisibleSign",
+      "type": "block",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "invisible_sign"
     }
   ],
   "variable_elements": [],
@@ -643,10 +661,11 @@
       "itemGroup.tabarmorcreativetab": "tools and combat",
       "item.entities_of_the_unknown.leaf_axe": "Leaf Axe",
       "item.entities_of_the_unknown.uglybootthingy": "Ugly boot thingy",
-      "enchantment.entities_of_the_unknown.leaf_power": "Leaf Power",
-      "item.entities_of_the_unknown.leafbow": "Leaf bow",
       "item.entities_of_the_unknown.soularmor_helmet": "Soul Helmet",
+      "item.entities_of_the_unknown.leafbow": "Leaf bow",
+      "enchantment.entities_of_the_unknown.leaf_power": "Leaf Power",
       "block.entities_of_the_unknown.nether_soul_ore": "Nether Soul Ore",
+      "block.entities_of_the_unknown.invisible_sign": "Invisible Sign",
       "item.entities_of_the_unknown.lemon": "Lemon",
       "item.entities_of_the_unknown.bagofchips": "Bag of chips",
       "item.entities_of_the_unknown.caramelfood": "Caramel",
