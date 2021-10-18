@@ -3,24 +3,35 @@
   "_type": "gui",
   "definition": {
     "type": 1,
-    "width": 176,
-    "height": 166,
+    "width": 200,
+    "height": 300,
     "inventoryOffsetX": 0,
-    "inventoryOffsetY": 0,
+    "inventoryOffsetY": 40,
     "renderBgLayer": true,
     "doesPauseGame": false,
     "components": [
       {
         "type": "label",
         "data": {
-          "text": "Vlexadoite Trades",
+          "text": "Trade",
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Vlexadoite Trades",
-          "x": 168,
-          "y": 43
+          "name": "Trade",
+          "x": 198,
+          "y": 6
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 0,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #0",
+          "x": 204,
+          "y": 135
         }
       },
       {
@@ -29,36 +40,133 @@
           "inputLimit": {
             "value": ""
           },
-          "id": 0,
-          "disableStackInteraction": false,
-          "dropItemsWhenNotBound": true,
-          "name": "Slot #0",
-          "x": 149,
-          "y": 74
-        }
-      },
-      {
-        "type": "outputslot",
-        "data": {
           "id": 1,
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
           "name": "Slot #1",
-          "x": 257,
-          "y": 74
+          "x": 132,
+          "y": 62
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 2,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #2",
+          "x": 168,
+          "y": 62
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 3,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #3",
+          "x": 204,
+          "y": 62
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 4,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #4",
+          "x": 240,
+          "y": 62
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 5,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #5",
+          "x": 276,
+          "y": 62
         }
       },
       {
         "type": "label",
         "data": {
-          "text": "Input",
+          "text": "Gold",
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Input",
-          "x": 145,
-          "y": 96
+          "name": "Gold",
+          "x": 130,
+          "y": 46
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Leaf",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Leaf",
+          "x": 167,
+          "y": 46
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Oak Log",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Oak Log",
+          "x": 195,
+          "y": 45
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Oak Leaves",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Oak Leaves",
+          "x": 260,
+          "y": 46
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Lapis",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Lapis",
+          "x": 233,
+          "y": 46
         }
       },
       {
@@ -70,11 +178,17 @@
             "falpha": 0.0
           },
           "name": "Output",
-          "x": 252,
-          "y": 96
+          "x": 198,
+          "y": 120
         }
       }
     ],
+    "onOpen": {
+      "name": "VlexadoiteTradeProcedure"
+    },
+    "onTick": {
+      "name": "VlexadoiteTradeProcedure"
+    },
     "gridSettings": {
       "sx": 18,
       "sy": 18,

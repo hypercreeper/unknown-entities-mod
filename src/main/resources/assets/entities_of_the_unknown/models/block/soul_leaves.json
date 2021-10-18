@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "entities_of_the_unknown:blocks/image_1",
+    "particle": "entities_of_the_unknown:blocks/image_1"
+  }
+}

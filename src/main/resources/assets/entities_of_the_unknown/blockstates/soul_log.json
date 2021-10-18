@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "entities_of_the_unknown:block/soul_log"
+    },
+    "facing=east": {
+      "model": "entities_of_the_unknown:block/soul_log",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "entities_of_the_unknown:block/soul_log",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "entities_of_the_unknown:block/soul_log",
+      "y": 270
+    }
+  }
+}

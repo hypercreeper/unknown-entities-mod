@@ -588,41 +588,76 @@
       "registry_name": "leaf_power"
     },
     {
-      "name": "Summertoneflower",
-      "type": "plant",
+      "name": "SoulLeaves",
+      "type": "block",
       "sortid": 60,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "summertoneflower"
+      "registry_name": "soul_leaves"
     },
     {
-      "name": "Hologrophy",
-      "type": "musicdisc",
+      "name": "SoulLog",
+      "type": "block",
       "sortid": 61,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "hologrophy"
+      "registry_name": "soul_log"
+    },
+    {
+      "name": "VlexadoiteTradeGUI",
+      "type": "gui",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "vlexadoite_trade_gui"
+    },
+    {
+      "name": "VlexadoiteTradeProcedure",
+      "type": "procedure",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "vlexadoite_trade_procedure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "InvisibleSignEditorGUI",
+      "type": "gui",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "invisible_sign_editor_gui"
+    },
+    {
+      "name": "InvisibleSign",
+      "type": "block",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "invisible_sign"
     }
   ],
   "variable_elements": [],
-  "sound_elements": [
-    {
-      "name": "hologrophy",
-      "files": [
-        "hologrophy"
-      ],
-      "category": "record",
-      "subtitle": ""
-    }
-  ],
+  "sound_elements": [],
   "language_map": {
     "en_us": {
+      "block.entities_of_the_unknown.soul_log": "Soul Log",
       "item.entities_of_the_unknown.lemonjelly": "Lemon jelly",
       "item.entities_of_the_unknown.shrine_dimension": "Soul Powder and Steel",
       "item.entities_of_the_unknown.leafsword": "Leaf sword",
-      "subtitles.hologrophy": "",
       "itemGroup.tabarmorcreativetab": "tools and combat",
       "item.entities_of_the_unknown.leaf_axe": "Leaf Axe",
       "item.entities_of_the_unknown.uglybootthingy": "Ugly boot thingy",
@@ -630,6 +665,7 @@
       "item.entities_of_the_unknown.leafbow": "Leaf bow",
       "enchantment.entities_of_the_unknown.leaf_power": "Leaf Power",
       "block.entities_of_the_unknown.nether_soul_ore": "Nether Soul Ore",
+      "block.entities_of_the_unknown.invisible_sign": "Invisible Sign",
       "item.entities_of_the_unknown.lemon": "Lemon",
       "item.entities_of_the_unknown.bagofchips": "Bag of chips",
       "item.entities_of_the_unknown.caramelfood": "Caramel",
@@ -646,7 +682,6 @@
       "block.entities_of_the_unknown.shrine_block_grass": "Shrine Block Grass",
       "itemGroup.tabshrine_dimension_blocks": "Shrine Dimension Blocks",
       "block.entities_of_the_unknown.glowflower": "Glowflower",
-      "item.entities_of_the_unknown.hologrophy.desc": "it makes a soul like vibe when properly heard.",
       "item.entities_of_the_unknown.soularmor_boots": "Soul Boots",
       "advancements.itssocold.title": "Its so cold",
       "itemGroup.tabuses": "Uses",
@@ -660,13 +695,12 @@
       "biome.entities_of_the_unknown.shrine_plains": "Shrine Plains",
       "block.entities_of_the_unknown.soulbliver": "Soul bliver",
       "advancements.itssocold.descr": "get a soul chestplate",
-      "block.entities_of_the_unknown.summertoneflower": "Summer tone flower",
       "item.entities_of_the_unknown.blackberryjelly": "Blackberry jelly",
       "item.entities_of_the_unknown.uglychestplatethingy": "Uglychestplatethingy",
       "block.entities_of_the_unknown.shrine_block": "Shrine Block",
       "item.entities_of_the_unknown.strawberrygel": "Strawberry gel",
+      "block.entities_of_the_unknown.soul_leaves": "Soul Leaves",
       "item.entities_of_the_unknown.blackberry": "Blackberry",
-      "item.entities_of_the_unknown.hologrophy": "Hologrophy",
       "item.entities_of_the_unknown.strawberry": "Strawberry",
       "item.entities_of_the_unknown.soularmor_leggings": "Soulr Leggings"
     }

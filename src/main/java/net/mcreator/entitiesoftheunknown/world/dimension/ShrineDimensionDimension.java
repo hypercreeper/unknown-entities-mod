@@ -99,7 +99,7 @@ public class ShrineDimensionDimension extends EntitiesOfTheUnknownModElements.Mo
 	@Override
 	@OnlyIn(Dist.CLIENT)
 	public void clientLoad(FMLClientSetupEvent event) {
-		DimensionRenderInfo customEffect = new DimensionRenderInfo(Float.NaN, true, DimensionRenderInfo.FogType.NONE, false, false) {
+		DimensionRenderInfo customEffect = new DimensionRenderInfo(128, true, DimensionRenderInfo.FogType.NORMAL, false, false) {
 			@Override
 			public Vector3d func_230494_a_(Vector3d color, float sunHeight) {
 				return new Vector3d(0, 0.6, 0.6);
