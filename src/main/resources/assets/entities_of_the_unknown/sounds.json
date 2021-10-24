@@ -1,9 +1,9 @@
 {
-  "hologrophy": {
-    "category": "record",
+  "the_sweet_sound_of_ambience": {
+    "category": "music",
     "sounds": [
       {
-        "name": "entities_of_the_unknown:hologrophy",
+        "name": "entities_of_the_unknown:the_sound_of_soft_ambients",
         "stream": true
       }
     ]
