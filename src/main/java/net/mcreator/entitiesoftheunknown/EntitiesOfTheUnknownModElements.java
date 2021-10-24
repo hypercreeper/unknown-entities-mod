@@ -47,6 +47,8 @@ public class EntitiesOfTheUnknownModElements {
 	public EntitiesOfTheUnknownModElements() {
 		sounds.put(new ResourceLocation("entities_of_the_unknown", "the_sweet_sound_of_ambience"),
 				new net.minecraft.util.SoundEvent(new ResourceLocation("entities_of_the_unknown", "the_sweet_sound_of_ambience")));
+		sounds.put(new ResourceLocation("entities_of_the_unknown", "holography"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("entities_of_the_unknown", "holography")));
 		try {
 			ModFileScanData modFileInfo = ModList.get().getModFileById("entities_of_the_unknown").getFile().getScanResult();
 			Set<ModFileScanData.AnnotationData> annotations = modFileInfo.getAnnotations();

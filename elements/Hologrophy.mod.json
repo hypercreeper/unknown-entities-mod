@@ -4,14 +4,14 @@
   "definition": {
     "texture": "hologrophy",
     "name": "Hologrophy",
-    "description": "it makes a soul like vibe when properly heard.",
+    "description": "Holography, who cares",
     "creativeTab": {
       "value": "CUSTOM:AncientItems"
     },
     "music": {
-      "value": "CUSTOM:hologrophy"
+      "value": "CUSTOM:holography"
     },
     "specialInfo": [],
-    "hasGlow": false
+    "hasGlow": true
   }
 }

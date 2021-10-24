@@ -3,8 +3,8 @@
   "_type": "musicdisc",
   "definition": {
     "texture": "the_sound_of_ambience",
-    "name": "The sound of ambience",
-    "description": "the sound of ambience",
+    "name": "The Sweet Sound Of Ambience",
+    "description": "The Sweet Sound Of Ambience",
     "creativeTab": {
       "value": "CUSTOM:AncientItems"
     },
@@ -12,6 +12,6 @@
       "value": "CUSTOM:the_sweet_sound_of_ambience"
     },
     "specialInfo": [],
-    "hasGlow": false
+    "hasGlow": true
   }
 }

@@ -7,5 +7,14 @@
         "stream": true
       }
     ]
+  },
+  "holography": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "entities_of_the_unknown:hologrophy",
+        "stream": true
+      }
+    ]
   }
 }

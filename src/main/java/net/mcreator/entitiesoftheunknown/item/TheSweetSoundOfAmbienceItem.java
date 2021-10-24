@@ -2,21 +2,24 @@
 package net.mcreator.entitiesoftheunknown.item;
 
 import net.minecraftforge.registries.ObjectHolder;
+import net.minecraftforge.api.distmarker.OnlyIn;
+import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.item.Rarity;
 import net.minecraft.item.MusicDiscItem;
+import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 
 import net.mcreator.entitiesoftheunknown.itemgroup.AncientItemsItemGroup;
 import net.mcreator.entitiesoftheunknown.EntitiesOfTheUnknownModElements;
 
 @EntitiesOfTheUnknownModElements.ModElement.Tag
-public class ThesoundofambienceItem extends EntitiesOfTheUnknownModElements.ModElement {
-	@ObjectHolder("entities_of_the_unknown:thesoundofambience")
+public class TheSweetSoundOfAmbienceItem extends EntitiesOfTheUnknownModElements.ModElement {
+	@ObjectHolder("entities_of_the_unknown:the_sweet_sound_of_ambience")
 	public static final Item block = null;
-	public ThesoundofambienceItem(EntitiesOfTheUnknownModElements instance) {
-		super(instance, 65);
+	public TheSweetSoundOfAmbienceItem(EntitiesOfTheUnknownModElements instance) {
+		super(instance, 66);
 	}
 
 	@Override
@@ -27,7 +30,13 @@ public class ThesoundofambienceItem extends EntitiesOfTheUnknownModElements.ModE
 		public MusicDiscItemCustom() {
 			super(0, EntitiesOfTheUnknownModElements.sounds.get(new ResourceLocation("entities_of_the_unknown:the_sweet_sound_of_ambience")),
 					new Item.Properties().group(AncientItemsItemGroup.tab).maxStackSize(1).rarity(Rarity.RARE));
-			setRegistryName("thesoundofambience");
+			setRegistryName("the_sweet_sound_of_ambience");
+		}
+
+		@Override
+		@OnlyIn(Dist.CLIENT)
+		public boolean hasEffect(ItemStack itemstack) {
+			return true;
 		}
 	}
 }
