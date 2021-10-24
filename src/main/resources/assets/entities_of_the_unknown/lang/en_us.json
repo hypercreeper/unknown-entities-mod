@@ -1,6 +1,7 @@
 {
   "block.entities_of_the_unknown.soul_log": "Soul Log",
   "item.entities_of_the_unknown.lemonjelly": "Lemon jelly",
+  "subtitles.the_sweet_sound_of_ambience": "",
   "item.entities_of_the_unknown.shrine_dimension": "Soul Powder and Steel",
   "item.entities_of_the_unknown.leafsword": "Leaf sword",
   "itemGroup.tabarmorcreativetab": "tools and combat",
@@ -12,6 +13,7 @@
   "block.entities_of_the_unknown.nether_soul_ore": "Nether Soul Ore",
   "block.entities_of_the_unknown.invisible_sign": "Invisible Sign",
   "item.entities_of_the_unknown.lemon": "Lemon",
+  "item.entities_of_the_unknown.thesoundofambience.desc": "the sound of ambience",
   "item.entities_of_the_unknown.bagofchips": "Bag of chips",
   "item.entities_of_the_unknown.caramelfood": "Caramel",
   "item.entities_of_the_unknown.leafbullet": "Leaf bullet",
@@ -30,6 +32,7 @@
   "item.entities_of_the_unknown.soularmor_boots": "Soul Boots",
   "advancements.itssocold.title": "Its so cold",
   "itemGroup.tabuses": "Uses",
+  "item.entities_of_the_unknown.thesoundofambience": "The sound of ambience",
   "item.entities_of_the_unknown.chips": "Chips",
   "entity.entities_of_the_unknown.vlexadoite": "Vlexadoite",
   "item.entities_of_the_unknown.lemongel": "Lemon gel",

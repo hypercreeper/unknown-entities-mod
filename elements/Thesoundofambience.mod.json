@@ -1,0 +1,17 @@
+{
+  "_fv": 24,
+  "_type": "musicdisc",
+  "definition": {
+    "texture": "the_sound_of_ambience",
+    "name": "The sound of ambience",
+    "description": "the sound of ambience",
+    "creativeTab": {
+      "value": "CUSTOM:AncientItems"
+    },
+    "music": {
+      "value": "CUSTOM:the_sweet_sound_of_ambience"
+    },
+    "specialInfo": [],
+    "hasGlow": false
+  }
+}
