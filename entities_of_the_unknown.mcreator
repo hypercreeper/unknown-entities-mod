@@ -690,8 +690,8 @@
   "language_map": {
     "en_us": {
       "block.entities_of_the_unknown.soul_log": "Soul Log",
-      "subtitles.the_sweet_sound_of_ambience": "",
       "item.entities_of_the_unknown.lemonjelly": "Lemon jelly",
+      "subtitles.the_sweet_sound_of_ambience": "",
       "item.entities_of_the_unknown.shrine_dimension": "Soul Powder and Steel",
       "item.entities_of_the_unknown.leafsword": "Leaf sword",
       "itemGroup.tabarmorcreativetab": "tools and combat",

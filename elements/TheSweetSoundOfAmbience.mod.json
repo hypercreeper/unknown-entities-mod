@@ -11,7 +11,9 @@
     "music": {
       "value": "CUSTOM:the_sweet_sound_of_ambience"
     },
-    "specialInfo": [],
+    "specialInfo": [
+      "im not sure you figure it out"
+    ],
     "hasGlow": true
   }
 }

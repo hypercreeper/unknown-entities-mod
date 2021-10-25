@@ -11,7 +11,9 @@
     "music": {
       "value": "CUSTOM:holography"
     },
-    "specialInfo": [],
+    "specialInfo": [
+      ":)"
+    ],
     "hasGlow": true
   }
 }
