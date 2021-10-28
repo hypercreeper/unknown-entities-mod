@@ -648,6 +648,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "invisible_sign"
+    },
+    {
+      "name": "Musicpainting",
+      "type": "painting",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "musicpainting"
     }
   ],
   "variable_elements": [],
